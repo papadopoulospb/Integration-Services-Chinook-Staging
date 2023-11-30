@@ -1,0 +1,16 @@
+﻿<?xml version="1.0"?>
+<DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:ObjectName="LAPTOP-S3TKI4O0.Chinook.sa"
+  DTS:DTSID="{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}"
+  DTS:CreationName="OLEDB">
+  <DTS:ObjectData>
+    <DTS:ConnectionManager
+      DTS:ConnectRetryCount="1"
+      DTS:ConnectRetryInterval="5"
+      DTS:ConnectionString="Data Source=LAPTOP-S3TKI4O0;User ID=sa;Initial Catalog=Chinook;Provider=SQLOLEDB.1;Application Name=SSIS-Integration Services Chinook Staging-{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}LAPTOP-S3TKI4O0.Chinook.sa;Auto Translate=False;">
+      <DTS:Password
+        DTS:Name="Password"
+        Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAACAAAAAAAQZgAAAAEAACAAAADHoejNO4CZVyKOOiHDzbqOgESU7NosIJBFcrM4tk31egAAAAAOgAAAAAIAACAAAAD4VAUQDYigsVA5ezFySFmyIC0lPDMopcLHVp+KrzVlxoAAAAAEG/obanrXDlL+JAEUKkbodeIawvu8MoMZyjnxxDjNFdKKcRKLlh05gYevPX9f6NQ7F4ouCNMiTic0p1jKXXAWo48bt7cvCvw0qOnq8pH4asIJEHT+LNmq5aQYbaZ/YTIS4msT80bqRnTgEnTu85kl1gX+zFBvcmPYSOBLoTFPykAAAADj9rUvpSL5e6K3vtllrVWvFUpjMGe6IT8SqKp1ubLjmKkSYl+jXhxfeJUVqklSd+z8YGF2R/iyTIpg4Su8t/TI</DTS:Password>
+    </DTS:ConnectionManager>
+  </DTS:ObjectData>
+</DTS:ConnectionManager>
