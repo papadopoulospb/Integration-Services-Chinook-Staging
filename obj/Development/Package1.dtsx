@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/9/2023 7:03:08 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-S3TKI4O0"
+  DTS:CreatorName="LAPTOP-S3TKI4O0\User"
+  DTS:DTSID="{DE4A1EDC-697D-4D36-96D4-4C9C523170A4}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5396.0"
+  DTS:LocaleID="1032"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{C1CB199E-6A29-4150-81D9-56773640E340}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Make relationships in DW (Snowflake)"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{0BD0F2F2-569C-47DD-BC1A-BA66489DEABC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Make relationships in DW (Snowflake)"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{A8DA55EE-3D18-4FEE-9EE6-B41B71D1C416}"
+          SQLTask:SqlStatementSource="ALTER TABLE FactSales ADD  constraint [FactSalesDimDateInvoice] FOREIGN KEY (InvoiceDateKey)&#xA;    REFERENCES DimDate(DateKey);&#xA;&#xA;&#xA;ALTER TABLE FactSales ADD  constraint [FactSalesDimCustomer]  FOREIGN KEY (CustomerKey)&#xA;    REFERENCES DimCustomer (CustomerKey);&#xA;&#xA;ALTER TABLE FactSales ADD  constraint [FactSalesDimEmployee] FOREIGN KEY (EmployeeKey)&#xA;    REFERENCES DimEmployee (EmployeeKey);&#xA;&#xA;ALTER TABLE FactSales ADD constraint [FactSalesDimTrack] FOREIGN KEY (TrackKey)&#xA;    REFERENCES DimTrack (TrackKey);&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="253.6,41.6"
+          Id="Package\Make relationships in DW (Snowflake)"
+          TopLeft="304.999983335535,94.4666660097573" />
+        <AnnotationLayout
+          Text="Make Relationships in DW (Snowflake)"
+          ParentId="Package"
+          FontInfo="{assembly:Null}"
+          Size="231.2,60"
+          Id="dd1acb90-c5a4-4fab-991c-972d682e933c"
+          TopLeft="607.499966807665,86.6666660639975" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

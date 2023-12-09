@@ -1,0 +1,58 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="12/9/2023 8:31:18 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="LAPTOP-S3TKI4O0"
+  DTS:CreatorName="LAPTOP-S3TKI4O0\User"
+  DTS:DTSID="{701F86BF-351F-4E38-9C3B-82643104F612}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="16.0.5396.0"
+  DTS:LocaleID="1032"
+  DTS:ObjectName="Package1"
+  DTS:PackageType="5"
+  DTS:VersionBuild="2"
+  DTS:VersionGUID="{6B6724FB-32E2-47C5-BFF3-066CFE827270}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Make updates in OLTP"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{91F00225-A7A6-4881-B04C-29E69566A8AD}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Make updates in OLTP"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}"
+          SQLTask:SqlStatementSource="&#xA;&#xA;/* Update Employee with EmployeeId=2 */&#xA;UPDATE [dbo].[Employee] SET &#xA;Title = 'Data Engineer' ,&#xA;ReportsTo = 1,&#xA;City='Athens',&#xA;State='Athens',&#xA;Country = 'Greece',&#xA;PostalCode='1111'&#xA;WHERE EmployeeId=2 ;&#xA;&#xA;SELECT * FROM [dbo].[Employee] WHERE [EmployeeId]=2 ; &#xA;&#xA;/* Insert Employee */&#xA;&#xA;INSERT INTO [dbo].[Employee] ([EmployeeId],[LastName]&#xA;      ,[FirstName]&#xA;      ,[Title]&#xA;      ,[ReportsTo]&#xA;      ,[BirthDate]&#xA;      ,[HireDate]&#xA;      ,[Address]&#xA;      ,[City]&#xA;      ,[State]&#xA;      ,[Country]&#xA;      ,[PostalCode]&#xA;      ,[Phone]&#xA;      ,[Fax]&#xA;      ,[Email])&#xA;VALUES(9,'Cruise', 'Tom','Business Analyst',1,'1980-01-01','2013-12-23 00:00:00.000','Smith 70','NY',NULL,'USA',NULL,'1234',NULL,'cruise@cruise.com');&#xA;&#xA;&#xA;&#xA;SELECT * FROM [dbo].[Employee] ;&#xA;&#xA;/* Insert new Invoice */&#xA;&#xA;INSERT INTO [dbo].[Invoice]([InvoiceId],[CustomerId],[InvoiceDate],[Total])&#xA;VALUES(413 , 1 , '2013-12-24', 2.97 );&#xA;declare  @InsertedInvoice int =413;&#xA;&#xA;&#xA;--SELECT * FROM [dbo].[Invoice] WHERE [InvoiceDate]&gt;='2013-12-22 00:00:00.000'&#xA;&#xA;INSERT INTO [dbo].[InvoiceLine](&#xA;[InvoiceLineId]&#xA;      ,[InvoiceId]&#xA;      ,[TrackId]&#xA;      ,[UnitPrice]&#xA;      ,[Quantity])&#xA;&#x9;  OUTPUT&#xA;inserted.[InvoiceLineId],  inserted.[InvoiceId],  inserted.[TrackId],  inserted.[UnitPrice],  inserted.[Quantity]&#xA;&#xA;VALUES(2241,@InsertedInvoice,1,0.99,1),&#xA;&#x9;  (2242,@InsertedInvoice,2,0.99,1),&#xA;&#x9;  (2243,@InsertedInvoice,3,0.99,1);&#xA;&#x9;  " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="184.8,41.6"
+          Id="Package\Make updates in OLTP"
+          TopLeft="309.999983062348,156.866665575835" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

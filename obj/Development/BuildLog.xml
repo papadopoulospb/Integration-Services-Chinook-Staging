@@ -2,13 +2,33 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Integration Services Chinook Staging</Name>
-    <LastWriteTime>2023-11-29T00:00:48.1251475Z</LastWriteTime>
+    <LastWriteTime>2023-12-09T18:27:30.7609865Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
-      <Name>Package.dtsx</Name>
-      <LastWriteTime>2023-11-30T00:58:16.7182857Z</LastWriteTime>
+      <Name>Load_staging_ssis.dtsx</Name>
+      <LastWriteTime>2023-12-09T17:54:24.1450395Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>CreateDimTDW_ssis.dtsx</Name>
+      <LastWriteTime>2023-12-09T17:55:04.8580689Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Load_tables_in_DW_ssis.dtsx</Name>
+      <LastWriteTime>2023-12-09T18:21:37.7086698Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Make_relationshipDW_ssis.dtsx</Name>
+      <LastWriteTime>2023-12-09T18:24:11.7730429Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Remove_relationship_DW_ssis.dtsx</Name>
+      <LastWriteTime>2023-12-09T18:27:30.7201001Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>

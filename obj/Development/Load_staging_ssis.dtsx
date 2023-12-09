@@ -5,14 +5,14 @@
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAPTOP-S3TKI4O0"
   DTS:CreatorName="LAPTOP-S3TKI4O0\User"
-  DTS:DTSID="{94493E38-ED77-4145-8E47-3F25F76C7C54}"
+  DTS:DTSID="{FE26C225-B53D-4C3B-AFBE-48859DA857DC}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5396.0"
   DTS:LocaleID="1032"
-  DTS:ObjectName="Package"
+  DTS:ObjectName="Load_staging_ssis"
   DTS:PackageType="5"
-  DTS:VersionBuild="81"
-  DTS:VersionGUID="{4B9F6D25-A189-45AA-A629-0DE25E25A11D}">
+  DTS:VersionBuild="83"
+  DTS:VersionGUID="{B6189476-E650-429D-A66C-C6FBDE8608DC}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADd+fbPDsftBViA/FNnOW2MosqPsZD2Nq0qmPNc/W03zwAAAAAOgAAAAAIAACAAAAC60e5HUwv6BNiraIEkfgmkFLTfLOqOb/hnVkGciuJ3+SAAAADcPkxZrnxClVpf2y3eQfL07fnCcWrknaQ1U73tJaprAUAAAACVgGitpkt2LSwlppxH4VEDg7vr3yPzt+/8l8g+TTz+d8IL32rm6Sk63w0SUI8lUllVwID7lakK6FP8tCGliPJ+</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABgHZLw5YM/IzZ9EyZcNhGvYU0slIphP6wLtAd8yaF1dgAAAAAOgAAAAAIAACAAAAAdvIbioHfykAIUPf+tD5zmfYfTq1oxVfOPPp6qlJNiiSAAAADAlZl5vTrgzq1hmENoDfQtTUxArmZYTanan1nnI9c7/EAAAACS0DPllNblWBKv003gGUs2sxd/nOrtRCXlz/Nykxuv3w5055lmz1GwxcC1J19TbY31PY3D9218qPunKFwzXGdF</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -2372,11 +2372,11 @@ where [refTable].[EmployeeId] = ?</property>
               </outputs>
             </component>
             <component
-              refId="Package\Extract Playlist info\OLE DB Source"
+              refId="Package\Extract Playlist info\Playlist Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="OLE DB Source"
+              name="Playlist Source"
               usesDispositions="true"
               version="7">
               <properties>
@@ -2421,7 +2421,7 @@ where [refTable].[EmployeeId] = ?</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Extract Playlist info\OLE DB Source.Connections[OleDbConnection]"
+                  refId="Package\Extract Playlist info\Playlist Source.Connections[OleDbConnection]"
                   connectionManagerID="{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}:external"
                   connectionManagerRefId="Project.ConnectionManagers[LAPTOP-S3TKI4O0.Chinook.sa]"
                   description="The OLE DB runtime connection used to access the database."
@@ -2429,68 +2429,68 @@ where [refTable].[EmployeeId] = ?</property>
               </connections>
               <outputs>
                 <output
-                  refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
+                      externalMetadataColumnId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
                       name="PlaylistId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      externalMetadataColumnId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
                       length="120"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]"
                       name="Name"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
                       dataType="i4"
                       name="PlaylistId" />
                     <externalMetadataColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
                       dataType="wstr"
                       length="120"
                       name="Name" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
                       dataType="i4"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
                       name="PlaylistId" />
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       dataType="wstr"
                       length="120"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[Name]"
                       name="Name" />
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -2746,7 +2746,7 @@ where [refTable].[EmployeeId] = ?</property>
                       refId="Package\Extract Playlist info\Sort 1.Inputs[Sort Input].Columns[PlaylistId]"
                       cachedDataType="i4"
                       cachedName="PlaylistId"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[PlaylistId]">
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2763,7 +2763,7 @@ where [refTable].[EmployeeId] = ?</property>
                       cachedDataType="wstr"
                       cachedLength="120"
                       cachedName="Name"
-                      lineageId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]">
+                      lineageId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]">
                       <properties>
                         <property
                           dataType="System.Int32"
@@ -2796,7 +2796,7 @@ where [refTable].[EmployeeId] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[PlaylistId]}</property>
+                          name="SortColumnId">#{Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]}</property>
                       </properties>
                     </outputColumn>
                     <outputColumn
@@ -2810,7 +2810,7 @@ where [refTable].[EmployeeId] = ?</property>
                           containsID="true"
                           dataType="System.Int32"
                           description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output].Columns[Name]}</property>
+                          name="SortColumnId">#{Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]}</property>
                       </properties>
                     </outputColumn>
                   </outputColumns>
@@ -2834,7 +2834,7 @@ where [refTable].[EmployeeId] = ?</property>
               refId="Package\Extract Playlist info.Paths[OLE DB Source Output1]"
               endId="Package\Extract Playlist info\Sort 1.Inputs[Sort Input]"
               name="OLE DB Source Output"
-              startId="Package\Extract Playlist info\OLE DB Source.Outputs[OLE DB Source Output]" />
+              startId="Package\Extract Playlist info\Playlist Source.Outputs[OLE DB Source Output]" />
             <path
               refId="Package\Extract Playlist info.Paths[Sort Output]"
               endId="Package\Extract Playlist info\Merge Join.Inputs[Merge Join Left Input]"
@@ -10319,64 +10319,64 @@ where [refTable].[EmployeeId] = ?</property>
               startId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Outputs[Merge Join Output]" />
             <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source MediaType.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Track.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Album.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Sort ArtistId.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Source Artist.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Album.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Genre by GenreId.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Source Genre.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source MediaType.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Track.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Outputs[Sort Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort ArtistId.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort 3.Outputs[Sort Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Outputs[Sort Output]" />
             <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output7]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 1.Inputs[Merge Join Right Input]"
@@ -10450,6 +10450,14 @@ where [refTable].[EmployeeId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
+          Size="216,41.6"
+          Id="Package\Create New Tables in Staging"
+          TopLeft="249.166653052801,142.999999005596" />
+        <NodeLayout
+          Size="184,41.6"
+          Id="Package\Drop Tables in Staging"
+          TopLeft="259.166652506425,22.5333331766393" />
+        <NodeLayout
           Size="294.4,41.6"
           Id="Package\Extract Customer Data to ChinookStagingSSIS"
           TopLeft="209.266668078138,342.633332001434" />
@@ -10457,6 +10465,14 @@ where [refTable].[EmployeeId] = ?</property>
           Size="296,41.6"
           Id="Package\Extract Employee Data to ChinookStagingSSIS"
           TopLeft="207.600001502534,259.433332579997" />
+        <NodeLayout
+          Size="166.4,41.6"
+          Id="Package\Extract Playlist info"
+          TopLeft="256.666652643019,541.999998083512" />
+        <NodeLayout
+          Size="276,41.6"
+          Id="Package\Extract Sales Data to ChinookStagingSSIS"
+          TopLeft="194.266668897701,658.89999748687" />
         <NodeLayout
           Size="276,41.6"
           Id="Package\Extract Track Data to ChinookStagingSSIS"
@@ -10505,18 +10521,40 @@ where [refTable].[EmployeeId] = ?</property>
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
-        <NodeLayout
-          Size="276,41.6"
-          Id="Package\Extract Sales Data to ChinookStagingSSIS"
-          TopLeft="194.266668897701,658.89999748687" />
-        <NodeLayout
-          Size="184,41.6"
-          Id="Package\Drop Tables in Staging"
-          TopLeft="259.166652506425,22.5333331766393" />
-        <NodeLayout
-          Size="216,41.6"
-          Id="Package\Create New Tables in Staging"
-          TopLeft="249.166653052801,142.999999005596" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint 2]"
+          TopLeft="355.600000956157,474.366664707992">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-15.733348313138,67.6333333755201"
+              Start="0,0"
+              End="-15.733348313138,60.1333333755201">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,29.81666668776" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,29.81666668776"
+                    Point2="0,33.81666668776"
+                    Point3="-4,33.81666668776" />
+                  <mssgle:LineSegment
+                    End="-11.733348313138,33.81666668776" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-11.733348313138,33.81666668776"
+                    Point2="-15.733348313138,33.81666668776"
+                    Point3="-15.733348313138,37.81666668776" />
+                  <mssgle:LineSegment
+                    End="-15.733348313138,60.1333333755201" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 3]"
           TopLeft="354.166652779613,64.1333331766393">
@@ -10553,44 +10591,6 @@ where [refTable].[EmployeeId] = ?</property>
                   Capacity="5">
                   <mssgle:LineSegment
                     End="0,67.333333574401" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="166.4,41.6"
-          Id="Package\Extract Playlist info"
-          TopLeft="256.666652643019,541.999998083512" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="355.600000956157,474.366664707992">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-15.733348313138,67.6333333755201"
-              Start="0,0"
-              End="-15.733348313138,60.1333333755201">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,29.81666668776" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,29.81666668776"
-                    Point2="0,33.81666668776"
-                    Point3="-4,33.81666668776" />
-                  <mssgle:LineSegment
-                    End="-11.733348313138,33.81666668776" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-11.733348313138,33.81666668776"
-                    Point2="-15.733348313138,33.81666668776"
-                    Point3="-15.733348313138,37.81666668776" />
-                  <mssgle:LineSegment
-                    End="-15.733348313138,60.1333333755201" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -10741,7 +10741,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10751,7 +10751,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10837,7 +10837,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:boolean">false</Value>
+          type="q2:string">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10847,7 +10847,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:int">0</Value>
+          type="q4:string">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -10869,6 +10869,211 @@ where [refTable].[EmployeeId] = ?</property>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
     design-time-name="Package\Extract Employee Data to ChinookStagingSSIS\Fetch Employee Data From Chinook">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <TaskHost
+    design-time-name="Package\Extract Playlist info">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Extract Playlist info\Sort"
+          TopLeft="345.999994844198,61.999999076128" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Extract Playlist info\Sort 1"
+          TopLeft="654.99999023974,72.9999989122153" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Extract Playlist info\PlaylistTrack Source"
+          TopLeft="93.9999985992909,60.9999990910292" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Extract Playlist info\Playlist Source"
+          TopLeft="828.999987646937,67.9999989867211" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Extract Playlist info\Merge Join"
+          TopLeft="493.999992638826,166.999997511506" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Extract Playlist info\OLE DB Destination"
+          TopLeft="477.999992877245,285.999995738268" />
+        <EdgeLayout
+          Id="Package\Extract Playlist info.Paths[Sort Output1]"
+          TopLeft="708.19999023974,114.599998912215">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.133330934246,52.3999985992908"
+              Start="0,0"
+              End="-129.133330934246,44.8999985992908">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.0565845356772" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.0565845356772"
+                    Point2="0,31.0565845356772"
+                    Point3="-4,31.0565845356772" />
+                  <mssgle:LineSegment
+                    End="-125.133330934246,31.0565845356772" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.133330934246,31.0565845356772"
+                    Point2="-129.133330934246,31.0565845356772"
+                    Point3="-129.133330934246,35.0565845356772" />
+                  <mssgle:LineSegment
+                    End="-129.133330934246,44.8999985992908" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Playlist info.Paths[Sort Output]"
+          TopLeft="394.799994844198,103.599999076128">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143.733331127961,63.3999984353781"
+              Start="0,0"
+              End="143.733331127961,55.8999984353781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5760966336509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5760966336509"
+                    Point2="0,37.5760966336509"
+                    Point3="4,37.5760966336509" />
+                  <mssgle:LineSegment
+                    End="139.733331127961,37.5760966336509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="139.733331127961,37.5760966336509"
+                    Point2="143.733331127961,37.5760966336509"
+                    Point3="143.733331127961,41.5760966336509" />
+                  <mssgle:LineSegment
+                    End="143.733331127961,55.8999984353781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Playlist info.Paths[OLE DB Source Output1]"
+          TopLeft="828.999987646937,91.2999989494682">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67.5999974071971,0"
+              Start="0,0"
+              End="-60.0999974071971,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-60.0999974071971,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Playlist info.Paths[OLE DB Source Output]"
+          TopLeft="267.599998599291,82.2999990835786">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78.3999962449075,0"
+              Start="0,0"
+              End="70.8999962449075,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="70.8999962449075,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Playlist info.Paths[Merge Join Output]"
+          TopLeft="561.199992758036,208.599997511506">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.3999982267619"
+              Start="0,0"
+              End="0,69.8999982267619">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.8999982267619" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Playlist info\PlaylistTrack Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Playlist info\Playlist Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Extract Playlist info\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11385,7 +11590,7 @@ where [refTable].[EmployeeId] = ?</property>
           Id="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID"
           TopLeft="167.142854652234,76.7142849883865" />
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
           TopLeft="1527.2,412.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11419,7 +11624,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
           TopLeft="1527.2,79.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11453,7 +11658,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
           TopLeft="78.285714162247,119.599999254942">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11487,7 +11692,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
           TopLeft="1527.2,245.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11521,7 +11726,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
           TopLeft="1527.2,579.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11657,7 +11862,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
           TopLeft="371.942854652234,94.7571424941932">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11679,7 +11884,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
           TopLeft="768,394.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11701,7 +11906,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
           TopLeft="1188,405.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11723,7 +11928,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
           TopLeft="768,210.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11757,7 +11962,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
           TopLeft="1188,93.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11779,7 +11984,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
           TopLeft="768,550.4">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11813,7 +12018,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
           TopLeft="1188,559.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -12042,7 +12247,7 @@ where [refTable].[EmployeeId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Source Track">
+    design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Source Album">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -12068,19 +12273,6 @@ where [refTable].[EmployeeId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
-    design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Source Album">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
     design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Source MediaType">
     <Properties>
       <Property>
@@ -12094,212 +12286,20 @@ where [refTable].[EmployeeId] = ?</property>
     </Properties>
   </PipelineComponentMetadata>
   <PipelineComponentMetadata
+    design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Source Track">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
     design-time-name="Package\Extract Track Data to ChinookStagingSSIS\Extract Data to Track table">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Extract Playlist info">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
-        <NodeLayout
-          Size="173.6,41.6"
-          Id="Package\Extract Playlist info\PlaylistTrack Source"
-          TopLeft="93.9999985992909,60.9999990910292" />
-        <NodeLayout
-          Size="152,41.6"
-          Id="Package\Extract Playlist info\OLE DB Source"
-          TopLeft="828.999987646937,67.9999989867211" />
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Extract Playlist info\Sort"
-          TopLeft="345.999994844198,61.999999076128" />
-        <EdgeLayout
-          Id="Package\Extract Playlist info.Paths[OLE DB Source Output]"
-          TopLeft="267.599998599291,82.2999990835786">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.3999962449075,0"
-              Start="0,0"
-              End="70.8999962449075,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="70.8999962449075,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Extract Playlist info\Sort 1"
-          TopLeft="654.99999023974,72.9999989122153" />
-        <EdgeLayout
-          Id="Package\Extract Playlist info.Paths[OLE DB Source Output1]"
-          TopLeft="828.999987646937,91.2999989494681">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-67.5999974071979,0"
-              Start="0,0"
-              End="-60.0999974071979,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-60.0999974071979,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Extract Playlist info\Merge Join"
-          TopLeft="493.999992638826,166.999997511506" />
-        <EdgeLayout
-          Id="Package\Extract Playlist info.Paths[Sort Output]"
-          TopLeft="394.799994844198,103.599999076128">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="143.733331127961,63.3999984353781"
-              Start="0,0"
-              End="143.733331127961,55.8999984353781">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5760966336509"
-                    Point2="0,37.5760966336509"
-                    Point3="4,37.5760966336509" />
-                  <mssgle:LineSegment
-                    End="139.733331127961,37.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="139.733331127961,37.5760966336509"
-                    Point2="143.733331127961,37.5760966336509"
-                    Point3="143.733331127961,41.5760966336509" />
-                  <mssgle:LineSegment
-                    End="143.733331127961,55.8999984353781" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Playlist info.Paths[Sort Output1]"
-          TopLeft="708.19999023974,114.599998912215">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-129.133330934246,52.3999985992908"
-              Start="0,0"
-              End="-129.133330934246,44.8999985992908">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.0565845356772"
-                    Point2="0,31.0565845356772"
-                    Point3="-4,31.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-125.133330934246,31.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-125.133330934246,31.0565845356772"
-                    Point2="-129.133330934246,31.0565845356772"
-                    Point3="-129.133330934246,35.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-129.133330934246,44.8999985992908" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Extract Playlist info\OLE DB Destination"
-          TopLeft="477.999992877245,285.999995738268" />
-        <EdgeLayout
-          Id="Package\Extract Playlist info.Paths[Merge Join Output]"
-          TopLeft="561.199992758036,208.599997511506">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,77.3999982267619"
-              Start="0,0"
-              End="0,69.8999982267619">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.8999982267619" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Playlist info\PlaylistTrack Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Playlist info\OLE DB Source">
-    <Properties>
-      <Property>
-        <Name>DataSourceViewID</Name>
-      </Property>
-      <Property>
-        <Name>TableInfoObjectType</Name>
-        <Value
-          type="q2:string">Table</Value>
-      </Property>
-    </Properties>
-  </PipelineComponentMetadata>
-  <PipelineComponentMetadata
-    design-time-name="Package\Extract Playlist info\OLE DB Destination">
     <Properties>
       <Property>
         <Name>DataSourceViewID</Name>
