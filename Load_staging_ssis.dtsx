@@ -11,8 +11,8 @@
   DTS:LocaleID="1032"
   DTS:ObjectName="Load_staging_ssis"
   DTS:PackageType="5"
-  DTS:VersionBuild="83"
-  DTS:VersionGUID="{B6189476-E650-429D-A66C-C6FBDE8608DC}">
+  DTS:VersionBuild="85"
+  DTS:VersionGUID="{28664F49-3D84-4982-B53A-748BBC4CCF3E}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACQ99ntq4hiMgtoHSnpLkIi0kj8fVr+kP63s0tpA5UtzwAAAAAOgAAAAAIAACAAAAD7UyHmt8qwM+1s7iCKMX9VVW0zzSoPE338cPhVhlq+fCAAAACpoZkIHSAzvxW3ax4V9FRl1lU5B9Up9JLyxqOYMyZIi0AAAAD6M0YiZj9NLSjvRFxmuDSJd36cLIbw5n9GcvRoSPqwNd3alZS/RyVjLb4gDcHktQXAwdAY1N+4TmRRI1NTuwkf</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAAN5TFf5P/otkcT+9vchMZSHb0Dkx2KysSzNQhBEkWK4QAAAAAOgAAAAAIAACAAAABZM574Wm+XGCL+QIniJ02GF7soI6fIZMvep0t9sWutkCAAAABuEBB0VdeHi+FpjRydOeOinyZi3paTEJY7uymdjB8Va0AAAAD8zg+LENCQTV1l26mV9bXRhCyE5K1lrDJN+eCOYkxWFGXkmlTKdbfSqmAIyYzc9EvtD7aLMJGwlGXXdmDEi5n0</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -10319,64 +10319,64 @@ where [refTable].[EmployeeId] = ?</property>
               startId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Outputs[Merge Join Output]" />
             <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source MediaType.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Track.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Album.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Sort ArtistId.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Source Artist.Outputs[OLE DB Source Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Album.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Genre by GenreId.Inputs[Sort Input]"
               name="OLE DB Source Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Source Genre.Outputs[OLE DB Source Output]" />
             <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source MediaType.Outputs[OLE DB Source Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Inputs[Sort Input]"
+              name="OLE DB Source Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Source Track.Outputs[OLE DB Source Output]" />
+            <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
+              endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Outputs[Sort Output]" />
+            <path
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 3.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort ArtistId.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 3.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort 1.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join.Inputs[Merge Join Right Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort Media by MediaTypeId.Outputs[Sort Output]" />
             <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
+              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 1.Inputs[Merge Join Left Input]"
               name="Sort Output"
               startId="Package\Extract Track Data to ChinookStagingSSIS\Sort 3.Outputs[Sort Output]" />
-            <path
-              refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
-              endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 2.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Extract Track Data to ChinookStagingSSIS\Sort AlbumId.Outputs[Sort Output]" />
             <path
               refId="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output7]"
               endId="Package\Extract Track Data to ChinookStagingSSIS\Merge Join 1.Inputs[Merge Join Right Input]"
@@ -10741,7 +10741,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>OverwriteParamsSQLProp</Name>
         <Value
-          type="q2:string">false</Value>
+          type="q2:boolean">false</Value>
       </Property>
       <Property>
         <Name>UsedTableName</Name>
@@ -10751,7 +10751,7 @@ where [refTable].[EmployeeId] = ?</property>
       <Property>
         <Name>TableInfoObjectType</Name>
         <Value
-          type="q4:string">0</Value>
+          type="q4:int">0</Value>
       </Property>
       <Property>
         <Name>DataSourceViewID</Name>
@@ -11578,6 +11578,10 @@ where [refTable].[EmployeeId] = ?</property>
       <GraphLayout
         Capacity="64" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib">
         <NodeLayout
+          Size="204.8,41.6"
+          Id="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID"
+          TopLeft="167.142854652234,76.7142849883865" />
+        <NodeLayout
           Size="140,41.6"
           Id="Package\Extract Track Data to ChinookStagingSSIS\Source Track"
           TopLeft="8.28571416224702,77.999999254942" />
@@ -11585,114 +11589,232 @@ where [refTable].[EmployeeId] = ?</property>
           Size="200.8,41.6"
           Id="Package\Extract Track Data to ChinookStagingSSIS\Extract Data to Track table"
           TopLeft="435.99999588728,1101.39999304116" />
-        <NodeLayout
-          Size="204.8,41.6"
-          Id="Package\Extract Track Data to ChinookStagingSSIS\Sort Track by MediaTypeID"
-          TopLeft="167.142854652234,76.7142849883865" />
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output7]"
+          TopLeft="1188,232">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-580.8,11.2"
+              Start="0,0"
+              End="-573.3,11.2">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-331.573333333333,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-331.573333333333,0"
+                    Point2="-335.573333333333,0"
+                    Point3="-335.573333333333,4" />
+                  <mssgle:LineSegment
+                    End="-335.573333333333,7.20000000000002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-335.573333333333,7.20000000000002"
+                    Point2="-335.573333333333,11.2"
+                    Point3="-339.573333333333,11.2" />
+                  <mssgle:LineSegment
+                    End="-573.3,11.2" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
+          TopLeft="1188,405.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-580.8,0"
+              Start="0,0"
+              End="-573.3,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-573.3,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
+          TopLeft="768,210.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-160.8,21.6"
+              Start="0,0"
+              End="-153.3,21.6">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-88.9066666666667,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88.9066666666667,0"
+                    Point2="-92.9066666666667,0"
+                    Point3="-92.9066666666667,4" />
+                  <mssgle:LineSegment
+                    End="-92.9066666666667,17.6" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-92.9066666666667,17.6"
+                    Point2="-92.9066666666667,21.6"
+                    Point3="-96.9066666666667,21.6" />
+                  <mssgle:LineSegment
+                    End="-153.3,21.6" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
+          TopLeft="1188,93.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-580.8,0"
+              Start="0,0"
+              End="-573.3,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-573.3,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
+          TopLeft="768,550.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-160.8,55.2000000000002"
+              Start="0,0"
+              End="-153.3,55.2000000000002">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-88.9066666666664,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-88.9066666666664,0"
+                    Point2="-92.9066666666664,0"
+                    Point3="-92.9066666666664,4" />
+                  <mssgle:LineSegment
+                    End="-92.9066666666664,51.2000000000002" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-92.9066666666664,51.2000000000002"
+                    Point2="-92.9066666666664,55.2000000000002"
+                    Point3="-96.9066666666664,55.2000000000002" />
+                  <mssgle:LineSegment
+                    End="-153.3,55.2000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
+          TopLeft="1188,559.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-580.8,57.6000000000001"
+              Start="0,0"
+              End="-573.3,57.6000000000001">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-331.573333333333,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-331.573333333333,0"
+                    Point2="-335.573333333333,0"
+                    Point3="-335.573333333333,4" />
+                  <mssgle:LineSegment
+                    End="-335.573333333333,53.6000000000001" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-335.573333333333,53.6000000000001"
+                    Point2="-335.573333333333,57.6000000000001"
+                    Point3="-339.573333333333,57.6000000000001" />
+                  <mssgle:LineSegment
+                    End="-573.3,57.6000000000001" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
+          TopLeft="371.942854652234,94.7571424941932">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="96.857145347766,0"
+              Start="0,0"
+              End="89.357145347766,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="89.357145347766,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
+          TopLeft="768,394.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-160.8,0"
+              Start="0,0"
+              End="-153.3,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-153.3,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
         <EdgeLayout
           Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output4]"
-          TopLeft="1527.2,412.8">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-133.6,-9.60000000000002"
-              Start="0,0"
-              End="-126.1,-9.60000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-62.8,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-62.8,0"
-                    Point2="-66.8,0"
-                    Point3="-66.8,-4" />
-                  <mssgle:LineSegment
-                    End="-66.8,-5.60000000000002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66.8,-5.60000000000002"
-                    Point2="-66.8,-9.60000000000002"
-                    Point3="-70.8,-9.60000000000002" />
-                  <mssgle:LineSegment
-                    End="-126.1,-9.60000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
-          TopLeft="1527.2,79.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-133.6,15.2"
-              Start="0,0"
-              End="-126.1,15.2">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-62.8,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-62.8,0"
-                    Point2="-66.8,0"
-                    Point3="-66.8,4" />
-                  <mssgle:LineSegment
-                    End="-66.8,11.2" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-66.8,11.2"
-                    Point2="-66.8,15.2"
-                    Point3="-70.8,15.2" />
-                  <mssgle:LineSegment
-                    End="-126.1,15.2" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
-          TopLeft="78.285714162247,119.599999254942">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="191.257140489987,-1.28571426655549"
-              Start="0,0"
-              End="191.257140489987,6.21428573344451">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,18.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,18.5"
-                    Point2="0,22.5"
-                    Point3="4,22.5" />
-                  <mssgle:LineSegment
-                    End="187.257140489987,22.5" />
-                  <mssgle:CubicBezierSegment
-                    Point1="187.257140489987,22.5"
-                    Point2="191.257140489987,22.5"
-                    Point3="191.257140489987,18.5" />
-                  <mssgle:LineSegment
-                    End="191.257140489987,6.21428573344451" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
           TopLeft="1527.2,245.6">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11726,7 +11848,7 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output3]"
           TopLeft="1527.2,579.2">
           <EdgeLayout.Curve>
             <mssgle:Curve
@@ -11760,31 +11882,99 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Merge Join Output1]"
-          TopLeft="538,258.4">
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output2]"
+          TopLeft="1527.2,412.8">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="283.2,113.6"
+              EndConnector="-133.6,-9.60000000000002"
               Start="0,0"
-              End="283.2,106.1">
+              End="-126.1,-9.60000000000002">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,52.8" />
+                    End="-62.8,0" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,52.8"
-                    Point2="0,56.8"
-                    Point3="4,56.8" />
+                    Point1="-62.8,0"
+                    Point2="-66.8,0"
+                    Point3="-66.8,-4" />
                   <mssgle:LineSegment
-                    End="279.2,56.8" />
+                    End="-66.8,-5.60000000000002" />
                   <mssgle:CubicBezierSegment
-                    Point1="279.2,56.8"
-                    Point2="283.2,56.8"
-                    Point3="283.2,60.8" />
+                    Point1="-66.8,-5.60000000000002"
+                    Point2="-66.8,-9.60000000000002"
+                    Point3="-70.8,-9.60000000000002" />
                   <mssgle:LineSegment
-                    End="283.2,106.1" />
+                    End="-126.1,-9.60000000000002" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output1]"
+          TopLeft="78.285714162247,119.599999254942">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="191.257140489987,-1.28571426655549"
+              Start="0,0"
+              End="191.257140489987,6.21428573344451">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,18.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,18.5"
+                    Point2="0,22.5"
+                    Point3="4,22.5" />
+                  <mssgle:LineSegment
+                    End="187.257140489987,22.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="187.257140489987,22.5"
+                    Point2="191.257140489987,22.5"
+                    Point3="191.257140489987,18.5" />
+                  <mssgle:LineSegment
+                    End="191.257140489987,6.21428573344451" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[OLE DB Source Output]"
+          TopLeft="1527.2,79.2">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-133.6,15.2"
+              Start="0,0"
+              End="-126.1,15.2">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-62.8,0" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-62.8,0"
+                    Point2="-66.8,0"
+                    Point3="-66.8,4" />
+                  <mssgle:LineSegment
+                    End="-66.8,11.2" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-66.8,11.2"
+                    Point2="-66.8,15.2"
+                    Point3="-70.8,15.2" />
+                  <mssgle:LineSegment
+                    End="-126.1,15.2" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -11828,6 +12018,62 @@ where [refTable].[EmployeeId] = ?</property>
           </EdgeLayout.Labels>
         </EdgeLayout>
         <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Merge Join Output2]"
+          TopLeft="537.19999794364,632">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,469.39999304116"
+              Start="0,0"
+              End="0,461.89999304116">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,461.89999304116" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Merge Join Output1]"
+          TopLeft="538,258.4">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="283.2,113.6"
+              Start="0,0"
+              End="283.2,106.1">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,52.8"
+                    Point2="0,56.8"
+                    Point3="4,56.8" />
+                  <mssgle:LineSegment
+                    End="279.2,56.8" />
+                  <mssgle:CubicBezierSegment
+                    Point1="279.2,56.8"
+                    Point2="283.2,56.8"
+                    Point3="283.2,60.8" />
+                  <mssgle:LineSegment
+                    End="283.2,106.1" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
           Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Merge Join Output]"
           TopLeft="538,112.8">
           <EdgeLayout.Curve>
@@ -11853,230 +12099,6 @@ where [refTable].[EmployeeId] = ?</property>
                     Point3="283.2,42.4" />
                   <mssgle:LineSegment
                     End="283.2,69.3" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output]"
-          TopLeft="371.942854652234,94.7571424941932">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="96.857145347766,0"
-              Start="0,0"
-              End="89.357145347766,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="89.357145347766,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output6]"
-          TopLeft="768,394.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-160.8,0"
-              Start="0,0"
-              End="-153.3,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-153.3,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output5]"
-          TopLeft="1188,405.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-580.8,0"
-              Start="0,0"
-              End="-573.3,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-573.3,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output4]"
-          TopLeft="768,210.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-160.8,21.6"
-              Start="0,0"
-              End="-153.3,21.6">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-88.9066666666667,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-88.9066666666667,0"
-                    Point2="-92.9066666666667,0"
-                    Point3="-92.9066666666667,4" />
-                  <mssgle:LineSegment
-                    End="-92.9066666666667,17.6" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-92.9066666666667,17.6"
-                    Point2="-92.9066666666667,21.6"
-                    Point3="-96.9066666666667,21.6" />
-                  <mssgle:LineSegment
-                    End="-153.3,21.6" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output3]"
-          TopLeft="1188,93.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-580.8,0"
-              Start="0,0"
-              End="-573.3,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-573.3,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output2]"
-          TopLeft="768,550.4">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-160.8,55.2000000000002"
-              Start="0,0"
-              End="-153.3,55.2000000000002">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-88.9066666666664,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-88.9066666666664,0"
-                    Point2="-92.9066666666664,0"
-                    Point3="-92.9066666666664,4" />
-                  <mssgle:LineSegment
-                    End="-92.9066666666664,51.2000000000002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-92.9066666666664,51.2000000000002"
-                    Point2="-92.9066666666664,55.2000000000002"
-                    Point3="-96.9066666666664,55.2000000000002" />
-                  <mssgle:LineSegment
-                    End="-153.3,55.2000000000002" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output1]"
-          TopLeft="1188,559.2">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-580.8,57.6000000000001"
-              Start="0,0"
-              End="-573.3,57.6000000000001">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-331.573333333333,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-331.573333333333,0"
-                    Point2="-335.573333333333,0"
-                    Point3="-335.573333333333,4" />
-                  <mssgle:LineSegment
-                    End="-335.573333333333,53.6000000000001" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-335.573333333333,53.6000000000001"
-                    Point2="-335.573333333333,57.6000000000001"
-                    Point3="-339.573333333333,57.6000000000001" />
-                  <mssgle:LineSegment
-                    End="-573.3,57.6000000000001" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Sort Output7]"
-          TopLeft="1188,232">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-580.8,11.2"
-              Start="0,0"
-              End="-573.3,11.2">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-331.573333333333,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-331.573333333333,0"
-                    Point2="-335.573333333333,0"
-                    Point3="-335.573333333333,4" />
-                  <mssgle:LineSegment
-                    End="-335.573333333333,7.20000000000002" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-335.573333333333,7.20000000000002"
-                    Point2="-335.573333333333,11.2"
-                    Point3="-339.573333333333,11.2" />
-                  <mssgle:LineSegment
-                    End="-573.3,11.2" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -12208,28 +12230,6 @@ where [refTable].[EmployeeId] = ?</property>
             <s:String>Package\Extract Track Data to ChinookStagingSSIS\Merge Join 3</s:String>
           </GroupLayout.ChildrenIds>
         </GroupLayout>
-        <EdgeLayout
-          Id="Package\Extract Track Data to ChinookStagingSSIS.Paths[Merge Join Output2]"
-          TopLeft="537.19999794364,632">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,469.39999304116"
-              Start="0,0"
-              End="0,461.89999304116">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,461.89999304116" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>

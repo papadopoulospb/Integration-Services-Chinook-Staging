@@ -1,127 +1,30 @@
 <?xml version="1.0"?>
 <DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
   DTS:refId="Package"
-  DTS:CreationDate="12/10/2023 8:04:36 PM"
+  DTS:CreationDate="12/11/2023 11:29:06 PM"
   DTS:CreationName="Microsoft.Package"
   DTS:CreatorComputerName="LAPTOP-S3TKI4O0"
   DTS:CreatorName="LAPTOP-S3TKI4O0\User"
-  DTS:DTSID="{B662A2CC-19CA-4956-875F-6968E63A80E4}"
+  DTS:DTSID="{FB363406-1013-4B24-B536-E1EB5564FF1C}"
   DTS:ExecutableType="Microsoft.Package"
   DTS:LastModifiedProductVersion="16.0.5396.0"
   DTS:LocaleID="1032"
   DTS:ObjectName="Package1"
   DTS:PackageType="5"
-  DTS:VersionBuild="27"
-  DTS:VersionGUID="{847C21BD-158D-4EDD-AFB4-B13DFCA1C74A}">
+  DTS:VersionBuild="9"
+  DTS:VersionGUID="{EDE62BE4-F2E4-4FA7-817B-F66ADDB68205}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
-  <DTS:ConnectionManagers>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-      DTS:ObjectName="LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-S3TKI4O0;User ID=sa;Initial Catalog=ChinookStagingSSIS;Provider=SQLOLEDB.1;Application Name=SSIS-Package1-{CCE30598-DC98-4192-9EA9-AF8B17C06013}LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAADPeh2oP4Beu4OWbNx3mL+0M+J/FqWotpRw8bhYcq30wgAAAAAOgAAAAAIAACAAAACN5phyC1H0XKTQxylHFjDv30upuxeG8g6lnnkO33K1myAAAAC2B03dHfgFJZkInAe41MkqnXVDJYwnyf5+NrOEWjkksEAAAAC4j3duzPuSt6WCwTSErgMBdjIU1YLXVqz7NOOEJJv6eAROZc2xfilwv+eju20GeCfrF4W20l1LrGt6YhNlWfvg</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-    <DTS:ConnectionManager
-      DTS:refId="Package.ConnectionManagers[LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa 1]"
-      DTS:CreationName="OLEDB"
-      DTS:DTSID="{C95F2F2C-E534-42C9-8C38-AFD7AFD81F7F}"
-      DTS:ObjectName="LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa 1">
-      <DTS:ObjectData>
-        <DTS:ConnectionManager
-          DTS:ConnectRetryCount="1"
-          DTS:ConnectRetryInterval="5"
-          DTS:ConnectionString="Data Source=LAPTOP-S3TKI4O0;User ID=sa;Initial Catalog=ChinookStagingSSIS;Provider=SQLOLEDB.1;Application Name=SSIS-Package-{C95F2F2C-E534-42C9-8C38-AFD7AFD81F7F}LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa;Auto Translate=False;">
-          <DTS:Password
-            DTS:Name="Password"
-            Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABT6BsA1tpK6SRl7GtizMJmbouta9MBRpEaR/N2Anb80AAAAAAOgAAAAAIAACAAAADk8NSmElXu6r25T9a6UjfB+JckaCdya6zXSZO5UZyWTSAAAACiapy9ldzO77AsJrA3x9++34SVXHQ2Y30jPtZpQBjhx0AAAABpTbfc13H214DugEq2JpfFzdgIqmrNlTKl8aRUauBynA+MUYgKrkE2qBIc7aYhMeGGa3WMjYnpW5onWNb8jN31</DTS:Password>
-        </DTS:ConnectionManager>
-      </DTS:ObjectData>
-    </DTS:ConnectionManager>
-  </DTS:ConnectionManagers>
-  <DTS:Variables>
-    <DTS:Variable
-      DTS:CreationName=""
-      DTS:DTSID="{65673FF3-996E-4908-87E7-14338AD05170}"
-      DTS:IncludeInDebugDump="6789"
-      DTS:Namespace="User"
-      DTS:ObjectName="etl_date">
-      <DTS:VariableValue
-        DTS:DataType="7">12/22/2013</DTS:VariableValue>
-    </DTS:Variable>
-  </DTS:Variables>
+  <DTS:Variables />
   <DTS:Executables>
     <DTS:Executable
-      DTS:refId="Package\Execute SQL Task"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{86820496-C9E2-4D37-8E6B-F47A8231A915}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Execute SQL Task"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="/* SQL Script for SCD type 2 for Chinook */&#xA;&#xA;USE [ChinookStagingSSIS] &#xA;GO&#xA;declare @etl_date AS date ='2013-12-22' ;&#xA;/* New Staging for Employee */&#xA;&#xA;TRUNCATE TABLE [ChinookStagingSSIS].[dbo].[Employee];&#xA;&#xA;INSERT INTO [dbo].[Employee](&#xA;[EmployeeId],[LastName],[FirstName],[Title],[ReportsTo],[BirthDate],[HireDate],[Address],[City],[State],[Country],[PostalCode],&#xA;[Phone],[Fax],[Email])&#xA;&#xA;SELECT [EmployeeId],[LastName],[FirstName],[Title],[ReportsTo],[BirthDate],[HireDate],[Address],[City],[State],[Country],[PostalCode],&#xA;[Phone],[Fax],[Email]&#xA;FROM [Chinook].[dbo].[Employee]&#xA;;&#xA;&#xA;/* New Staging for Customer */ &#xA;&#xA;TRUNCATE TABLE [ChinookStagingSSIS].[dbo].[Customer];&#xA;&#xA;INSERT INTO [dbo].[Customer](&#xA;[CustomerId],[FirstName],[LastName],[Company],[Address],[City],[State],[Country],[PostalCode],[Phone],[Fax],[Email],[SupportRepId]&#xA;)&#xA;&#xA;SELECT [CustomerId],[FirstName],[LastName],[Company],[Address],[City],[State],[Country],[PostalCode],[Phone],[Fax],[Email],[SupportRepId]&#xA;&#xA;FROM [Chinook].[dbo].[Customer];&#xA;&#xA;/* New Staging for Track */&#xA;TRUNCATE TABLE [ChinookStagingSSIS].[dbo].[Track];&#xA;&#xA;INSERT INTO [ChinookStagingSSIS].[dbo].[Track](&#xA;[TrackId],[TrackName],[AlbumTitle],[ArtistName],[MediaTypeName],[GenreName],[Composer],[Milliseconds],[Bytes]&#xA;)&#xA;&#xA;SELECT t.TrackId,&#xA;&#x9;   t.[Name] &#xA;      ,a.[Title] &#xA;&#x9;  ,artist.[Name]  &#xA;      ,mt.[Name] &#xA;      ,g.[Name] &#xA;      ,t.[Composer]&#xA;      ,t.[Milliseconds]&#xA;      ,t.[Bytes]&#xA;--&#x9;  ,p.[Name] as PlayListName &#xA;&#xA;FROM [Chinook].[dbo].[Track] t&#xA;INNER JOIN Chinook.[dbo].[Album] a ON a.AlbumId = t.AlbumId &#xA;INNER JOIN Chinook.[dbo].[Artist] artist ON artist.ArtistId = a.ArtistId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[MediaType] mt ON mt.MediaTypeId=t.MediaTypeId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[Genre] g ON g.GenreId = t.GenreId &#xA;/*&#xA;INNER JOIN Chinook.[dbo].[PlaylistTrack] plt ON plt.TrackId = t.TrackId&#xA;INNER JOIN [Chinook].[dbo].[Playlist] p ON p.PlaylistId = plt.PlaylistId ;&#xA;*/&#xA;&#xA;/* New Staging For Sales */ &#xA;&#xA;&#xA;TRUNCATE TABLE [ChinookStagingSSIS].[dbo].[Sales];&#xA;INSERT INTO [ChinookStagingSSIS].[dbo].[Sales] (&#xA;[TrackId],[InvoiceId],[CustomerId],[EmployeeId],[InvoiceDate],[UnitPrice],[Quantity]&#xA;)&#xA;&#xA;SELECT il.[TrackId]      -- productID&#xA;      ,i.[InvoiceId]     -- the order (timologio)&#xA;      ,i.[CustomerId]    -- the customer that made the order&#xA;&#x9;  ,e.[EmployeeId]    --the employee who helped the customer for the order&#xA;      ,i.[InvoiceDate]   -- the date&#xA;      ,il.[UnitPrice]    -- track price&#xA;      ,il.[Quantity]     -- track quantity - always 1&#xA;&#xA;FROM [Chinook].[dbo].[Invoice] i&#xA;INNER JOIN [Chinook].[dbo].[InvoiceLine] il ON il.InvoiceId = i.InvoiceId&#xA;INNER JOIN [Chinook].[dbo].[Customer] c ON c.CustomerId = i.CustomerId&#xA;INNER JOIN [Chinook].[dbo].[Employee] e ON e.EmployeeId = c.SupportRepId &#xA;&#xA;WHERE CAST(i.[InvoiceDate] as date) &gt;= @etl_date;&#xA;&#xA;/*  SCD for Employee of the ChinookDB */&#xA;DROP TABLE IF EXISTS [ChinookStagingSSIS].[dbo].[Staging_DimEmployee];&#xA;&#xA;CREATE TABLE [Staging_DimEmployee] (&#xA;    EmployeeKey INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    EmployeeId INT NOT NULL,&#xA;    EmployeeName VARCHAR(40) NOT NULL,&#xA;    EmployeeTitle VARCHAR(40) NOT NULL,&#xA;&#x9;EmployeeManagerName VARCHAR(40) NOT NULL,&#xA;&#x9;EmployeeBirthDate DATE NOT NULL,&#xA;    [HireDate] DATE NOT NULL,&#xA;    [EmployeeAddress] NVARCHAR(70) NOT NULL,&#xA;    [EmployeeCity] NVARCHAR(40) NOT NULL,&#xA;    [EmployeeState] NVARCHAR(40) DEFAULT 'N/A' NOT NULL,&#xA;    [EmployeeCountry] NVARCHAR(40) NOT NULL,&#xA;    [EmployeePostalCode] NVARCHAR(10) DEFAULT 'N/A' NOT NULL,&#xA;    [EmployeePhone] NVARCHAR(24) NOT NULL,&#xA;    [EmployeeFax] NVARCHAR(24) DEFAULT 'N/A' NOT NULL,&#xA;    [EmployeeEmail] NVARCHAR(60) NOT NULL,&#xA;    RowIsCurrent INT DEFAULT 1 NOT NULL,&#xA;    RowStartDate DATE DEFAULT '2009-01-01' NOT NULL,&#xA;    RowEndDate DATE DEFAULT '9999-12-31' NOT NULL,&#xA;    RowChangeReason VARCHAR(200) NULL&#xA;);&#xA;&#xA;INSERT INTO [ChinookStagingSSIS].[dbo].[Staging_DimEmployee] (&#xA;&#x9;--EmployeeKey,&#xA;    EmployeeId ,&#xA;    EmployeeName ,&#xA;    EmployeeTitle ,&#xA;&#x9;EmployeeManagerName ,&#xA;&#x9;EmployeeBirthDate ,&#xA;    [HireDate] ,&#xA;    [EmployeeAddress] ,&#xA;    [EmployeeCity] ,&#xA;    [EmployeeState],&#xA;    [EmployeeCountry] ,&#xA;    [EmployeePostalCode] ,&#xA;    [EmployeePhone] ,&#xA;    [EmployeeFax],&#xA;    [EmployeeEmail]&#xA;)&#xA;SELECT e1.EmployeeID, e1.[FirstName] + ' ' + e1.[LastName], e1.Title, COALESCE(manager.[FirstName]+' '+manager.[LastName],'N/A') , CAST (e1.[BirthDate] as DATE) , CAST (e1.[HireDate] as DATE),&#xA;&#x9;e1.[Address] , e1.[City] , COALESCE(e1.[State],'N/A') , e1.[Country], COALESCE(e1.[PostalCode],'N/A') ,e1.[Phone] , COALESCE(e1.[Fax],'N/A') ,e1.[Email]&#xA;&#xA;FROM ChinookStagingSSIS.dbo.Employee e1&#xA;LEFT JOIN ChinookStagingSSIS.dbo.Employee manager ON manager.[EmployeeId] = e1.[ReportsTo];&#xA;&#xA;/* REMOVE THE CONSTRAINTS IN DATA WAREHOUSE TO USE MERGE */ &#xA;/*&#xA;ALTER TABLE [ChinookDWSSIS].[dbo].[FactSales] DROP CONSTRAINT [FactSalesDimCustomer];&#xA;&#xA;ALTER TABLE [ChinookDWSSIS].[dbo].[FactSales] DROP CONSTRAINT [FactSalesDimDateInvoice];&#xA;&#xA;ALTER TABLE [ChinookDWSSIS].[dbo].[FactSales] DROP CONSTRAINT [FactSalesDimEmployee];&#xA;&#xA;ALTER TABLE [ChinookDWSSIS].[dbo].[FactSales] DROP CONSTRAINT [FactSalesDimTrack] ;&#xA;*/&#xA;/* Update - Insert - Delete rows in DimEmployee */&#xA;&#xA;INSERT INTO [ChinookDWSSIS].[dbo].[DimEmployee](&#xA;&#x9;EmployeeID, EmployeeName, EmployeeTitle, EmployeeManagerName, EmployeeBirthDate, HireDate,&#xA;&#x9;EmployeeAddress, EmployeeCity, EmployeeState, EmployeeCountry, EmployeePostalCode, EmployeePhone, EmployeeFax,&#xA;&#x9;EmployeeEmail, RowStartDate, RowChangeReason&#xA;)&#xA;SELECT&#xA;&#x9;EmployeeID, EmployeeName, EmployeeTitle, EmployeeManagerName, EmployeeBirthDate, HireDate,&#xA;&#x9;EmployeeAddress, EmployeeCity, EmployeeState, EmployeeCountry, EmployeePostalCode, EmployeePhone, EmployeeFax,&#xA;&#x9;EmployeeEmail,  @etl_date&#x9;  , ActionName&#xA;&#xA;FROM(&#xA;&#xA;MERGE [ChinookDWSSIS].[dbo].[DimEmployee] as target&#xA;USING [ChinookStagingSSIS].[dbo].[Staging_DimEmployee] as source&#xA;ON target.[EmployeeId] = source.[EmployeeId]&#xA;&#xA;WHEN MATCHED  AND target.[RowIsCurrent]=1 AND (source.EmployeeCity &lt;&gt; target.EmployeeCity OR source.EmployeePhone&lt;&gt;target.EmployeePhone OR source.EmployeeEmail&lt;&gt;target.EmployeeEmail&#xA;OR source.EmployeeTitle&lt;&gt;target.EmployeeTitle OR source.EmployeeManagerName&lt;&gt;target.EmployeeManagerName)&#xA;&#xA;THEN UPDATE SET&#xA;target.RowIsCurrent = 0,&#xA;target.RowEndDate = dateadd(day, -1, @etl_date ) ,&#xA;target.RowChangeReason = 'UPDATED NOT CURRENT'&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (EmployeeID, EmployeeName, EmployeeTitle, EmployeeManagerName, EmployeeBirthDate, HireDate,&#xA;&#x9;EmployeeAddress, EmployeeCity, EmployeeState, EmployeeCountry, EmployeePostalCode, EmployeePhone, EmployeeFax,&#xA;&#x9;EmployeeEmail,  RowStartDate,   RowChangeReason&#xA;&#x9;)&#xA;&#x9;VALUES(source.EmployeeID, source.EmployeeName,source.EmployeeTitle, source.EmployeeManagerName, source.EmployeeBirthDate, source.HireDate,&#xA;&#x9;source.EmployeeAddress, source.EmployeeCity, source.EmployeeState, source.EmployeeCountry, source.EmployeePostalCode, source.EmployeePhone, source.EmployeeFax,&#xA;&#x9;source.EmployeeEmail,  @etl_date,  'NEW_RECORD' )&#xA;&#xA;WHEN NOT MATCHED BY Source THEN&#xA;&#x9;UPDATE SET&#xA;&#x9; target.RowEndDate= dateadd(day, -1, @etl_date)&#xA;&#x9;,target.RowIsCurrent = 0&#xA;&#x9;,target.RowChangeReason  = 'FIRED/RESIGNED'&#xA;OUTPUT&#xA;&#x9;source.EmployeeID, source.EmployeeName,source.EmployeeTitle, source.EmployeeManagerName, source.EmployeeBirthDate, source.HireDate,&#xA;&#x9;source.EmployeeAddress, source.EmployeeCity, source.EmployeeState, source.EmployeeCountry, source.EmployeePostalCode, source.EmployeePhone, source.EmployeeFax,&#xA;&#x9;source.EmployeeEmail,$Action as ActionName&#xA;&#x9;&#xA;&#xA;) as MrgEmpl&#xA;WHERE MrgEmpl.ActionName = 'UPDATE' AND [EmployeeId] IS NOT NULL;&#xA;&#xA;&#xA;/*  SCD for Customer of the ChinookDB */&#xA;DROP TABLE IF EXISTS [ChinookStagingSSIS].[dbo].[Staging_DimCustomer];&#xA;&#xA;CREATE TABLE [Staging_DimCustomer] (&#xA;    CustomerKey INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;    CustomerId INT NOT NULL,&#xA;    CustomerFullName VARCHAR(60) NOT NULL,&#xA;    CustomerCompany VARCHAR(80) DEFAULT 'N/A' NOT NULL,&#xA;&#x9;CustomerAddress NVARCHAR(70) NOT NULL,&#xA;    CustomerCity NVARCHAR(40) NOT NULL,&#xA;    [CustomerState] NVARCHAR(40) NOT NULL,&#xA;    [CustomerCountry] NVARCHAR(40) NOT NULL,&#xA;    [CustomerPostalCode] NVARCHAR(10) DEFAULT 'N/A' NOT NULL,&#xA;    [CustomerFax] NVARCHAR(24) DEFAULT 'N/A' NOT NULL,&#xA;&#x9;[CustomerEmail] NVARCHAR(60) NOT NULL,&#xA;    [SupportBy] VARCHAR(40) NOT NULL,&#xA;    RowIsCurrent INT DEFAULT 1 NOT NULL,&#xA;    RowStartDate DATE DEFAULT '2009-01-01' NOT NULL,&#xA;    RowEndDate DATE DEFAULT '9999-12-31' NOT NULL,&#xA;    RowChangeReason VARCHAR(200) NULL&#xA;);&#xA;&#xA;INSERT INTO [ChinookStagingSSIS].[dbo].[Staging_DimCustomer] (&#xA;    CustomerId ,&#xA;    CustomerFullName ,&#xA;    CustomerCompany ,&#xA;&#x9;CustomerAddress ,&#xA;    CustomerCity ,&#xA;    [CustomerState] ,&#xA;    [CustomerCountry] ,&#xA;    [CustomerPostalCode] ,&#xA;    [CustomerFax] ,&#xA;&#x9;[CustomerEmail] ,&#xA;    [SupportBy] &#xA;)&#xA;SELECT c.CustomerID, c.[FirstName]+' '+c.[LastName], COALESCE([Company],'N/A') , c.[Address], c.[City], COALESCE(c.[State], 'N/A') , c.[Country],&#xA;&#x9;COALESCE(c.[PostalCode],'N/A') , COALESCE(c.[Fax] , 'N/A') , c.[Email] , e.FirstName+' '+e.LastName&#xA;&#xA;    FROM ChinookStagingSSIS.dbo.Customer c&#xA;&#x9;INNER JOIN ChinookStagingSSIS.dbo.Employee as e ON c.SupportRepId=e.EmployeeId&#xA;&#x9;&#xA;/* Update - Insert - Delete rows in DimCustomer */&#xA;INSERT INTO [ChinookDWSSIS].[dbo].[DimCustomer](&#xA;&#x9;CustomerId ,&#xA;    CustomerFullName ,&#xA;    CustomerCompany ,&#xA;&#x9;CustomerAddress ,&#xA;    CustomerCity ,&#xA;    [CustomerState] ,&#xA;    [CustomerCountry] ,&#xA;    [CustomerPostalCode] ,&#xA;    [CustomerFax] ,&#xA;&#x9;[CustomerEmail] ,&#xA;    [SupportBy], RowStartDate, RowChangeReason&#xA;)&#xA;SELECT&#xA;&#x9;CustomerId ,&#xA;    CustomerFullName ,&#xA;    CustomerCompany ,&#xA;&#x9;CustomerAddress ,&#xA;    CustomerCity ,&#xA;    [CustomerState] ,&#xA;    [CustomerCountry] ,&#xA;    [CustomerPostalCode] ,&#xA;    [CustomerFax] ,&#xA;&#x9;[CustomerEmail] ,&#xA;    [SupportBy],  @etl_date&#x9;  , ActionNameCustomer&#xA;&#xA;FROM(&#xA;&#xA;MERGE [ChinookDWSSIS].[dbo].[DimCustomer] as target&#xA;USING [ChinookStagingSSIS].[dbo].[Staging_DimCustomer] as source&#xA;ON target.[CustomerId] = source.[CustomerId]&#xA;&#xA;WHEN MATCHED  AND target.[RowIsCurrent]=1 AND (source.CustomerAddress &lt;&gt; target.CustomerAddress OR source.CustomerCity&lt;&gt;target.CustomerCity OR source.CustomerEmail&lt;&gt;target.CustomerEmail&#xA;OR source.CustomerCompany&lt;&gt;target.CustomerCompany OR source.CustomerCountry&lt;&gt;target.CustomerCountry OR source.[SupportBy]&lt;&gt;target.[SupportBy] )&#xA;&#xA;THEN UPDATE SET&#xA;target.RowIsCurrent = 0,&#xA;target.RowEndDate = dateadd(day, -1, @etl_date ) ,&#xA;target.RowChangeReason = 'UPDATED NOT CURRENT'&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT (CustomerId ,&#xA;    CustomerFullName ,&#xA;    CustomerCompany ,&#xA;&#x9;CustomerAddress ,&#xA;    CustomerCity ,&#xA;    [CustomerState] ,&#xA;    [CustomerCountry] ,&#xA;    [CustomerPostalCode] ,&#xA;    [CustomerFax] ,&#xA;&#x9;[CustomerEmail] ,&#xA;    [SupportBy],  RowStartDate,   RowChangeReason&#xA;&#x9;)&#xA;&#x9;VALUES(source.CustomerId, source.CustomerFullName,source.CustomerCompany, source.CustomerAddress, source.CustomerCity, source.CustomerState,&#xA;&#x9;source.CustomerCountry, source.CustomerPostalCode, source.CustomerFax, source.CustomerEmail, source.SupportBy,  @etl_date,  'NEW_RECORD' )&#xA;&#xA;WHEN NOT MATCHED BY Source THEN&#xA;&#x9;UPDATE SET&#xA;&#x9; target.RowEndDate= dateadd(day, -1, @etl_date)&#xA;&#x9;,target.RowIsCurrent = 0&#xA;&#x9;,target.RowChangeReason  = 'SOFT DELETE'&#xA;OUTPUT&#xA;&#x9;source.CustomerId, source.CustomerFullName,source.CustomerCompany, source.CustomerAddress, source.CustomerCity, source.CustomerState,&#xA;&#x9;source.CustomerCountry, source.CustomerPostalCode, source.CustomerFax, source.CustomerEmail, source.SupportBy,$Action as ActionNameCustomer&#xA;&#x9;&#xA;&#xA;) as MrgCust&#xA;WHERE MrgCust.ActionNameCustomer = 'UPDATE' AND [CustomerId] IS NOT NULL;&#xA;&#xA;&#xA;&#xA;&#xA;DROP TABLE IF EXISTS [ChinookStagingSSIS].[dbo].[Staging_DimTrack];&#xA;&#xA;CREATE TABLE Staging_DimTrack( &#xA;&#x9;TrackKey INT IDENTITY(1,1) NOT NULL PRIMARY KEY,&#xA;&#x9;TrackId INT NOT NULL,&#xA;&#x9;[TrackName] NVARCHAR(200) NOT NULL,&#xA;&#x9;[AlbumTitle] NVARCHAR(160) NOT NULL,&#xA;&#x9;[ArtistName] NVARCHAR(120) NOT NULL,&#xA;&#x9;[MediaTypeName] NVARCHAR(120) NOT NULL,&#xA;&#x9;[GenreName] NVARCHAR(120) NOT NULL,&#xA;&#x9;[Composer] NVARCHAR(220) NOT NULL,&#xA;&#x9;[Milliseconds] INT NOT NULL,&#xA;&#x9;[Bytes] INT NOT NULL,&#xA;&#x9;--[PlayListName] NVARCHAR(120) NOT NULL, -- Must configure many-to-many relationship . Star schema does not allow this, instead we need snowflake.&#xA;&#x9;RowIsCurrent INT DEFAULT 1 NOT NULL,&#xA;    RowStartDate DATE DEFAULT '2009-01-01' NOT NULL,&#xA;    RowEndDate DATE DEFAULT '9999-12-31' NOT NULL,&#xA;    RowChangeReason VARCHAR(200) NULL&#xA;);&#xA;&#xA;&#xA;&#xA;&#xA;INSERT INTO [ChinookStagingSSIS].[dbo].[Staging_DimTrack] (&#xA;    [TrackID], [TrackName], [AlbumTitle], [ArtistName], [MediaTypeName], [GenreName],[Composer],[Milliseconds],[Bytes] &#xA;)&#xA;SELECT [TrackId],[TrackName],[AlbumTitle],[ArtistName],[MediaTypeName],[GenreName],COALESCE([Composer],'N/A'),[Milliseconds],[Bytes]&#xA;-- PlayListName &#xA;&#xA;FROM [ChinookStagingSSIS].[dbo].[Track]&#xA;&#xA;/*&#xA;INNER JOIN Chinook.[dbo].[Album] a ON a.AlbumId = t.AlbumId &#xA;INNER JOIN Chinook.[dbo].[Artist] artist ON artist.ArtistId = a.ArtistId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[MediaType] mt ON mt.MediaTypeId=t.MediaTypeId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[Genre] g ON g.GenreId = t.GenreId &#xA;&#xA;&#xA;INNER JOIN Chinook.[dbo].[PlaylistTrack] plt ON plt.TrackId = t.TrackId&#xA;INNER JOIN [Chinook].[dbo].[Playlist] p ON p.PlaylistId = plt.PlaylistId ;&#xA;*/&#xA;&#xA;/* Update - Insert - Delete rows in DimTrack*/&#xA;&#xA;&#xA;INSERT INTO [ChinookDWSSIS].[dbo].[DimTrack](&#xA;&#x9;[TrackID], [TrackName], [AlbumTitle], [ArtistName], [MediaTypeName], [GenreName],[Composer],[Milliseconds],[Bytes], RowStartDate, RowChangeReason&#xA;)&#xA;SELECT&#xA;&#x9;[TrackID], [TrackName], [AlbumTitle], [ArtistName], [MediaTypeName], [GenreName],[Composer],[Milliseconds],[Bytes] ,  @etl_date&#x9;  , ActionNameTrack&#xA;&#xA;FROM(&#xA;&#xA;MERGE [ChinookDWSSIS].[dbo].[DimTrack] as target&#xA;USING [ChinookStagingSSIS].[dbo].[Staging_DimTrack] as source&#xA;ON target.[TrackId] = source.[TrackId]&#xA;&#xA;WHEN MATCHED  AND target.[RowIsCurrent]=1 &#xA;/*AND (source.CustomerAddress &lt;&gt; target.CustomerAddress OR source.CustomerCity&lt;&gt;target.CustomerCity OR source.CustomerEmail&lt;&gt;target.CustomerEmail&#xA;OR source.CustomerCompany&lt;&gt;target.CustomerCompany OR source.CustomerCountry&lt;&gt;target.CustomerCountry OR source.[SupportBy]&lt;&gt;target.[SupportBy] )*/&#xA;&#xA;THEN UPDATE SET&#xA;target.RowIsCurrent = 0,&#xA;target.RowEndDate = dateadd(day, -1, @etl_date ) ,&#xA;target.RowChangeReason = 'UPDATED NOT CURRENT'&#xA;&#xA;WHEN NOT MATCHED THEN&#xA;&#x9;INSERT ([TrackID], [TrackName], [AlbumTitle], [ArtistName], [MediaTypeName], [GenreName],[Composer],[Milliseconds],[Bytes] ,  RowStartDate,   RowChangeReason&#xA;&#x9;)&#xA;&#x9;VALUES(source.TrackId, source.TrackName,source.AlbumTitle, source.ArtistName, source.MediaTypeName, source.GenreName,&#xA;&#x9;source.Composer, source.Milliseconds, source.Bytes,  @etl_date,  'NEW_RECORD' )&#xA;&#xA;WHEN NOT MATCHED BY Source THEN&#xA;&#x9;UPDATE SET&#xA;&#x9; target.RowEndDate= dateadd(day, -1, @etl_date)&#xA;&#x9;,target.RowIsCurrent = 0&#xA;&#x9;,target.RowChangeReason  = 'SOFT DELETE'&#xA;OUTPUT&#xA;&#x9;source.TrackId, source.TrackName,source.AlbumTitle, source.ArtistName, source.MediaTypeName, source.GenreName,&#xA;&#x9;source.Composer, source.Milliseconds, source.Bytes,$Action as ActionNameTrack&#xA;&#x9;&#xA;&#xA;) as MrgTrack&#xA;WHERE MrgTrack.ActionNameTrack = 'UPDATE' AND [TrackId] IS NOT NULL;&#xA;&#xA;/* Insert New Facts */&#xA;&#xA;INSERT INTO [ChinookDWSSIS].[dbo].FactSales(&#xA;[TrackKey],[EmployeeKey],[CustomerKey],[InvoiceDateKey],[InvoiceID],[UnitPrice],[Quantity],[PartialAmount]&#xA;)&#xA;SELECT  t.[TrackKey] , e.[EmployeeKey], c.[CustomerKey], &#xA;CAST(FORMAT([InvoiceDate],'yyyyMMdd') AS INT), &#xA;[InvoiceID], [UnitPrice], [Quantity], [UnitPrice]*[Quantity]&#xA;&#xA;FROM ChinookStagingSSIS.dbo.Sales s&#xA;INNER JOIN  ChinookDWSSIS.dbo.DimTrack t ON s.TrackId = t.TrackId AND t.RowIsCurrent=1&#xA;INNER JOIN ChinookDWSSIS.dbo.DimEmployee e ON e.EmployeeId=s.EmployeeId AND e.RowIsCurrent=1&#xA;INNER JOIN ChinookDWSSIS.dbo.DimCustomer c ON c.CustomerId = s.CustomerId AND c.RowIsCurrent=1&#xA;&#xA;&#xA;&#xA;/* !!! DON'T FORGET TO MAKE RELATIONSHIPS AGAIN IN DATA WAREHOUSE !!! */&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load Customer in staging"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{ECD005DB-8B8B-4AAF-B08E-C1E11190F6D2}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Load Customer in staging"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="&#xA;INSERT INTO [dbo].[Customer](&#xA;[CustomerId],[FirstName],[LastName],[Company],[Address],[City],[State],[Country],[PostalCode],[Phone],[Fax],[Email],[SupportRepId]&#xA;)&#xA;&#xA;SELECT [CustomerId],[FirstName],[LastName],[Company],[Address],[City],[State],[Country],[PostalCode],[Phone],[Fax],[Email],[SupportRepId]&#xA;&#xA;FROM [Chinook].[dbo].[Customer];" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load Employee in staging"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7F1E81B7-86A7-4B8F-9CC4-A89ABB7A503F}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Load Employee in staging"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Employee](&#xA;[EmployeeId],[LastName],[FirstName],[Title],[ReportsTo],[BirthDate],[HireDate],[Address],[City],[State],[Country],[PostalCode],&#xA;[Phone],[Fax],[Email])&#xA;&#xA;SELECT [EmployeeId],[LastName],[FirstName],[Title],[ReportsTo],[BirthDate],[HireDate],[Address],[City],[State],[Country],[PostalCode],&#xA;[Phone],[Fax],[Email]&#xA;FROM [Chinook].[dbo].[Employee]&#xA;;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load Playlist in staging"
+      DTS:refId="Package\Data Flow Task"
       DTS:CreationName="Microsoft.Pipeline"
       DTS:Description="Data Flow Task"
-      DTS:DTSID="{32C94908-475F-4DBF-9ADB-F92053B76915}"
+      DTS:DTSID="{137CD0E8-2CF3-487E-AB16-0668F6941BAF}"
       DTS:ExecutableType="Microsoft.Pipeline"
       DTS:LocaleID="-1"
-      DTS:ObjectName="Load Playlist in staging"
+      DTS:ObjectName="Data Flow Task"
       DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
       <DTS:Variables />
       <DTS:ObjectData>
@@ -129,227 +32,428 @@
           version="1">
           <components>
             <component
-              refId="Package\Load Playlist in staging\Merge Join"
-              componentClassID="Microsoft.MergeJoin"
-              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
-              name="Merge Join"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the type of join to perform."
-                  name="JoinType"
-                  typeConverter="JoinType">2</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the number of columns in the ordering key."
-                  name="NumKeyColumns">1</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the null values are treated as equal values."
-                  name="TreatNullsAsEqual">true</property>
-                <property
-                  dataType="System.Int32"
-                  description="Indicates the requested maximum buffers per input before blocking."
-                  name="MaxBuffersPerInput">5</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Left Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Left Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Left Input].Columns[PlaylistId]"
-                      cachedDataType="i4"
-                      cachedName="PlaylistId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[PlaylistId]" />
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Left Input].Columns[TrackId]"
-                      cachedDataType="i4"
-                      cachedName="TrackId"
-                      lineageId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[TrackId]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-                <input
-                  refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Right Input]"
-                  hasSideEffects="true"
-                  name="Merge Join Right Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Right Input].Columns[PlaylistId]"
-                      cachedDataType="i4"
-                      cachedName="PlaylistId"
-                      cachedSortKeyPosition="1"
-                      lineageId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[PlaylistId]" />
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Right Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="120"
-                      cachedName="Name"
-                      lineageId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[Name]" />
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output]"
-                  name="Merge Join Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[TrackId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[TrackId]"
-                      name="TrackId">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Left Input].Columns[TrackId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[PlaylistN]"
-                      dataType="wstr"
-                      length="120"
-                      lineageId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[PlaylistN]"
-                      name="PlaylistN">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="The input column associated with this output column"
-                          name="InputColumnID">#{Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Right Input].Columns[Name]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Playlist in staging\OLE DB Destination"
-              componentClassID="Microsoft.OLEDBDestination"
-              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
-              description="OLE DB Destination"
-              name="OLE DB Destination"
+              refId="Package\Data Flow Task\Lookup"
+              componentClassID="Microsoft.Lookup"
+              contactInfo="Lookup;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;6"
+              description="Joins additional columns to the data flow by looking up values in a table. For example, join to the 'employee id' column the employees table to get 'hire date' and 'employee name'. We recommend this transformation when the lookup table can fit into memory."
+              name="Lookup"
               usesDispositions="true"
-              version="4">
+              version="6">
               <properties>
                 <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
                   dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[PlaylistName]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
+                  description="Specifies the SQL statement that generates the lookup table."
+                  expressionType="Notify"
                   name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from DimEmployee where RowIsCurrent=1</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies a SQL statement that uses parameters to generate the lookup table."
+                  expressionType="Notify"
+                  name="SqlCommandParam"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor">select * from (select * from DimEmployee where RowIsCurrent=1) [refTable]
+where [refTable].[EmployeeId] = ?</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of connection used to access the reference dataset."
+                  name="ConnectionType"
+                  typeConverter="LookupConnectionType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the cache type of the lookup table."
+                  name="CacheType"
+                  typeConverter="CacheType">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies how the Lookup transformation handles rows without matching entries in the reference data set."
+                  name="NoMatchBehavior"
+                  typeConverter="LookupNoMatchBehavior">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the percentage of the cache that is allocated for rows with no matching entries in the reference dataset."
+                  name="NoMatchCachePercentage">0</property>
+                <property
+                  dataType="System.Int32"
+                  description="Maximum Memory Usage for Reference Cache on a 32 bit platform."
+                  name="MaxMemoryUsage">25</property>
+                <property
+                  dataType="System.Int64"
+                  description="Maximum Memory Usage for Reference Cache on a 64 bit platform."
+                  name="MaxMemoryUsage64">25</property>
+                <property
+                  dataType="System.String"
+                  description="Indicates whether to reference metadata in an XML format."
+                  name="ReferenceMetadataXml">&lt;referenceMetadata&gt;&lt;referenceColumns&gt;&lt;referenceColumn name="EmployeeKey" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeId" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeName" dataType="DT_STR" length="40" precision="0" scale="0" codePage="1253"/&gt;&lt;referenceColumn name="EmployeeTitle" dataType="DT_STR" length="40" precision="0" scale="0" codePage="1253"/&gt;&lt;referenceColumn name="EmployeeManagerName" dataType="DT_STR" length="40" precision="0" scale="0" codePage="1253"/&gt;&lt;referenceColumn name="EmployeeBirthDate" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="HireDate" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeAddress" dataType="DT_WSTR" length="70" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeCity" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeState" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeCountry" dataType="DT_WSTR" length="40" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeePostalCode" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeePhone" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeFax" dataType="DT_WSTR" length="24" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="EmployeeEmail" dataType="DT_WSTR" length="60" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowIsCurrent" dataType="DT_I4" length="0" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowStartDate" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowEndDate" dataType="DT_WSTR" length="10" precision="0" scale="0" codePage="0"/&gt;&lt;referenceColumn name="RowChangeReason" dataType="DT_STR" length="200" precision="0" scale="0" codePage="1253"/&gt;&lt;/referenceColumns&gt;&lt;/referenceMetadata&gt;</property>
+                <property
+                  containsID="true"
+                  dataType="System.String"
+                  description="Specifies the list of lineage identifiers that map to the parameters that the SQL statement in the SQLCommand property uses. Entries in the list are separated by semicolons."
+                  name="ParameterMap">#{Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeId]};</property>
                 <property
                   dataType="System.Int32"
                   description="Specifies the column code page to use when code page information is unavailable from the data source."
                   name="DefaultCodePage">1253</property>
                 <property
                   dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">3</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepIdentity">false</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
-                  name="FastLoadKeepNulls">false</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
-                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
-                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+                  description="Determines whether duplicate keys in the reference data should be treated as errors when full cache mode is used."
+                  name="TreatDuplicateKeysAsError">false</property>
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load Playlist in staging\OLE DB Destination.Connections[OleDbConnection]"
-                  connectionManagerID="Package.ConnectionManagers[LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa 1]"
-                  connectionManagerRefId="Package.ConnectionManagers[LAPTOP-S3TKI4O0.ChinookStagingSSIS.sa 1]"
-                  description="The OLE DB runtime connection used to access the database."
+                  refId="Package\Data Flow Task\Lookup.Connections[OleDbConnection]"
+                  connectionManagerID="{A8DA55EE-3D18-4FEE-9EE6-B41B71D1C416}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[LAPTOP-S3TKI4O0.ChinookDWSSIS.sa]"
+                  description="Connection manager used to access lookup data."
                   name="OleDbConnection" />
               </connections>
               <inputs>
                 <input
-                  refId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
-                  errorOrTruncationOperation="Insert"
-                  errorRowDisposition="FailComponent"
-                  hasSideEffects="true"
-                  name="OLE DB Destination Input">
+                  refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
+                  name="Lookup Input">
                   <inputColumns>
                     <inputColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[TrackId]"
+                      refId="Package\Data Flow Task\Lookup.Inputs[Lookup Input].Columns[EmployeeId]"
                       cachedDataType="i4"
-                      cachedName="TrackId"
-                      externalMetadataColumnId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrackId]"
-                      lineageId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[TrackId]" />
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PlaylistN]"
-                      cachedDataType="wstr"
-                      cachedLength="120"
-                      cachedName="PlaylistN"
-                      externalMetadataColumnId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      lineageId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output].Columns[PlaylistN]" />
+                      cachedName="EmployeeId"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeId]">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table that a column joins."
+                          name="JoinToReferenceColumn">EmployeeId</property>
+                        <property
+                          dataType="System.Null"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn" />
+                      </properties>
+                    </inputColumn>
                   </inputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[TrackId]"
-                      dataType="i4"
-                      name="TrackId" />
-                    <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
-                      dataType="wstr"
-                      length="120"
-                      name="Name" />
-                  </externalMetadataColumns>
+                  <externalMetadataColumns />
                 </input>
               </inputs>
               <outputs>
                 <output
-                  refId="Package\Load Playlist in staging\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output]"
+                  errorOrTruncationOperation="Lookup"
+                  errorRowDisposition="IgnoreFailure"
+                  exclusionGroup="1"
+                  name="Lookup Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeKey]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeKey]"
+                      name="EmployeeKey"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeKey</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeId]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeId]"
+                      name="EmployeeId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeId</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeName]"
+                      codePage="1253"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeName]"
+                      name="EmployeeName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeName</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeTitle]"
+                      codePage="1253"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeTitle]"
+                      name="EmployeeTitle"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeTitle</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeManagerName]"
+                      codePage="1253"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeManagerName]"
+                      name="EmployeeManagerName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeManagerName</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeBirthDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeBirthDate]"
+                      name="EmployeeBirthDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeBirthDate</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[HireDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[HireDate]"
+                      name="HireDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">HireDate</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeAddress]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="70"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeAddress]"
+                      name="EmployeeAddress"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeAddress</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeCity]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeCity]"
+                      name="EmployeeCity"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeCity</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeState]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeState]"
+                      name="EmployeeState"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeState</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeCountry]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="40"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeCountry]"
+                      name="EmployeeCountry"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeCountry</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeePostalCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeePostalCode]"
+                      name="EmployeePostalCode"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeePostalCode</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeePhone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="24"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeePhone]"
+                      name="EmployeePhone"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeePhone</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeFax]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="24"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeFax]"
+                      name="EmployeeFax"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeFax</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeEmail]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="60"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[EmployeeEmail]"
+                      name="EmployeeEmail"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">EmployeeEmail</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowIsCurrent]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Copy Column"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowIsCurrent]"
+                      name="RowIsCurrent"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RowIsCurrent</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowStartDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowStartDate]"
+                      name="RowStartDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RowStartDate</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowEndDate]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Copy Column"
+                      length="10"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowEndDate]"
+                      name="RowEndDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RowEndDate</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowChangeReason]"
+                      codePage="1253"
+                      dataType="str"
+                      errorOrTruncationOperation="Copy Column"
+                      length="200"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Match Output].Columns[RowChangeReason]"
+                      name="RowChangeReason"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.String"
+                          description="Specifies the column in the reference table from which a column is copied."
+                          name="CopyFromReferenceColumn">RowChangeReason</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]"
+                  description="The Lookup output that handles rows with no matching entries in the reference dataset. Use this output when the NoMatchBehavior property is set to &quot;Send rows with no matching entries to the no match output.&quot;"
+                  exclusionGroup="1"
+                  name="Lookup No Match Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output]"
                   exclusionGroup="1"
                   isErrorOut="true"
-                  name="OLE DB Destination Error Output"
-                  synchronousInputId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  name="Lookup Error Output"
+                  synchronousInputId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       dataType="i4"
-                      lineageId="Package\Load Playlist in staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load Playlist in staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load Playlist in staging\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\Lookup.Outputs[Lookup Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
                   </outputColumns>
@@ -358,11 +462,35 @@
               </outputs>
             </component>
             <component
-              refId="Package\Load Playlist in staging\Playlist Source"
+              refId="Package\Data Flow Task\Multicast"
+              componentClassID="Microsoft.Multicast"
+              contactInfo="Multicast;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Distributes every input row to every row in one or more outputs. For example, branch your data flow to make a copy of data so that some values can be masked before sharing with external partners."
+              name="Multicast">
+              <inputs>
+                <input
+                  refId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+                  name="Multicast Input 1">
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\Data Flow Task\Multicast.Outputs[Multicast Output 1]"
+                  dangling="true"
+                  deleteOutputOnPathDetached="true"
+                  name="Multicast Output 1"
+                  synchronousInputId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]">
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\Data Flow Task\OLE DB Source"
               componentClassID="Microsoft.OLEDBSource"
               contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
               description="OLE DB Source"
-              name="Playlist Source"
+              name="OLE DB Source"
               usesDispositions="true"
               version="7">
               <properties>
@@ -373,7 +501,7 @@
                 <property
                   dataType="System.String"
                   description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[Playlist]</property>
+                  name="OpenRowset">[dbo].[Employee]</property>
                 <property
                   dataType="System.String"
                   description="Specifies the variable that contains the name of the database object used to open a rowset."
@@ -407,7 +535,7 @@
               </properties>
               <connections>
                 <connection
-                  refId="Package\Load Playlist in staging\Playlist Source.Connections[OleDbConnection]"
+                  refId="Package\Data Flow Task\OLE DB Source.Connections[OleDbConnection]"
                   connectionManagerID="{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}:external"
                   connectionManagerRefId="Project.ConnectionManagers[LAPTOP-S3TKI4O0.Chinook.sa]"
                   description="The OLE DB runtime connection used to access the database."
@@ -415,390 +543,334 @@
               </connections>
               <outputs>
                 <output
-                  refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output]"
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]"
                   name="OLE DB Source Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeId]"
                       dataType="i4"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
-                      name="PlaylistId"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmployeeId]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[EmployeeId]"
+                      name="EmployeeId"
                       truncationRowDisposition="FailComponent" />
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
                       dataType="wstr"
                       errorOrTruncationOperation="Conversion"
                       errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
-                      length="120"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]"
-                      name="Name"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
+                      length="20"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[LastName]"
+                      name="LastName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      length="20"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[FirstName]"
+                      name="FirstName"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Title]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Title]"
+                      length="30"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Title]"
+                      name="Title"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReportsTo]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReportsTo]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[ReportsTo]"
+                      name="ReportsTo"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[BirthDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BirthDate]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[BirthDate]"
+                      name="BirthDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[HireDate]"
+                      dataType="dbTimeStamp"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HireDate]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[HireDate]"
+                      name="HireDate"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      length="70"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Address]"
+                      name="Address"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[City]"
+                      name="City"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[State]"
+                      name="State"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Country]"
+                      name="Country"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[PostalCode]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PostalCode]"
+                      length="10"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[PostalCode]"
+                      name="PostalCode"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      length="24"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Phone]"
+                      name="Phone"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fax]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fax]"
+                      length="24"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Fax]"
+                      name="Fax"
+                      truncationRowDisposition="FailComponent" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      length="60"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].Columns[Email]"
+                      name="Email"
                       truncationRowDisposition="FailComponent" />
                   </outputColumns>
                   <externalMetadataColumns
                     isUsed="True">
                     <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[EmployeeId]"
                       dataType="i4"
-                      name="PlaylistId" />
+                      name="EmployeeId" />
                     <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].ExternalColumns[Name]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[LastName]"
                       dataType="wstr"
-                      length="120"
-                      name="Name" />
+                      length="20"
+                      name="LastName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[FirstName]"
+                      dataType="wstr"
+                      length="20"
+                      name="FirstName" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Title]"
+                      dataType="wstr"
+                      length="30"
+                      name="Title" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[ReportsTo]"
+                      dataType="i4"
+                      name="ReportsTo" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[BirthDate]"
+                      dataType="dbTimeStamp"
+                      name="BirthDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[HireDate]"
+                      dataType="dbTimeStamp"
+                      name="HireDate" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Address]"
+                      dataType="wstr"
+                      length="70"
+                      name="Address" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[City]"
+                      dataType="wstr"
+                      length="40"
+                      name="City" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[State]"
+                      dataType="wstr"
+                      length="40"
+                      name="State" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Country]"
+                      dataType="wstr"
+                      length="40"
+                      name="Country" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[PostalCode]"
+                      dataType="wstr"
+                      length="10"
+                      name="PostalCode" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Phone]"
+                      dataType="wstr"
+                      length="24"
+                      name="Phone" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Fax]"
+                      dataType="wstr"
+                      length="24"
+                      name="Fax" />
+                    <externalMetadataColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output].ExternalColumns[Email]"
+                      dataType="wstr"
+                      length="60"
+                      name="Email" />
                   </externalMetadataColumns>
                 </output>
                 <output
-                  refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output]"
+                  refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output]"
                   isErrorOut="true"
                   name="OLE DB Source Error Output">
                   <outputColumns>
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmployeeId]"
                       dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
-                      name="PlaylistId" />
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[EmployeeId]"
+                      name="EmployeeId" />
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[Name]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
                       dataType="wstr"
-                      length="120"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[Name]"
-                      name="Name" />
+                      length="20"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[LastName]"
+                      name="LastName" />
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      dataType="wstr"
+                      length="20"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[FirstName]"
+                      name="FirstName" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Title]"
+                      dataType="wstr"
+                      length="30"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Title]"
+                      name="Title" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReportsTo]"
                       dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ReportsTo]"
+                      name="ReportsTo" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BirthDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[BirthDate]"
+                      name="BirthDate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HireDate]"
+                      dataType="dbTimeStamp"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[HireDate]"
+                      name="HireDate" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      dataType="wstr"
+                      length="70"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Address]"
+                      name="Address" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[City]"
+                      name="City" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[State]"
+                      name="State" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Country]"
+                      dataType="wstr"
+                      length="40"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Country]"
+                      name="Country" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PostalCode]"
+                      dataType="wstr"
+                      length="10"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[PostalCode]"
+                      name="PostalCode" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      dataType="wstr"
+                      length="24"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Phone]"
+                      name="Phone" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fax]"
+                      dataType="wstr"
+                      length="24"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Fax]"
+                      name="Fax" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      dataType="wstr"
+                      length="60"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[Email]"
+                      name="Email" />
+                    <outputColumn
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
                       name="ErrorCode"
                       specialFlags="1" />
                     <outputColumn
-                      refId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      refId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
+                      lineageId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
                       name="ErrorColumn"
                       specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Playlist in staging\PlaylistTrack Source"
-              componentClassID="Microsoft.OLEDBSource"
-              contactInfo="OLE DB Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;7"
-              description="OLE DB Source"
-              name="PlaylistTrack Source"
-              usesDispositions="true"
-              version="7">
-              <properties>
-                <property
-                  dataType="System.Int32"
-                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
-                  name="CommandTimeout">0</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the name of the database object used to open a rowset."
-                  name="OpenRowset">[dbo].[PlaylistTrack]</property>
-                <property
-                  dataType="System.String"
-                  description="Specifies the variable that contains the name of the database object used to open a rowset."
-                  name="OpenRowsetVariable"></property>
-                <property
-                  dataType="System.String"
-                  description="The SQL command to be executed."
-                  name="SqlCommand"
-                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
-                <property
-                  dataType="System.String"
-                  description="The variable that contains the SQL command to be executed."
-                  name="SqlCommandVariable"></property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the column code page to use when code page information is unavailable from the data source."
-                  name="DefaultCodePage">1253</property>
-                <property
-                  dataType="System.Boolean"
-                  description="Forces the use of the DefaultCodePage property value when describing character data."
-                  name="AlwaysUseDefaultCodePage">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the mode used to access the database."
-                  name="AccessMode"
-                  typeConverter="AccessMode">0</property>
-                <property
-                  dataType="System.String"
-                  description="The mappings between the parameters in the SQL command and variables."
-                  name="ParameterMapping"></property>
-              </properties>
-              <connections>
-                <connection
-                  refId="Package\Load Playlist in staging\PlaylistTrack Source.Connections[OleDbConnection]"
-                  connectionManagerID="{23D39ABD-38D3-4CBF-8E46-F85CCDB28C8F}:external"
-                  connectionManagerRefId="Project.ConnectionManagers[LAPTOP-S3TKI4O0.Chinook.sa]"
-                  description="The OLE DB runtime connection used to access the database."
-                  name="OleDbConnection" />
-              </connections>
-              <outputs>
-                <output
-                  refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output]"
-                  name="OLE DB Source Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[PlaylistId]"
-                      name="PlaylistId"
-                      truncationRowDisposition="FailComponent" />
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[TrackId]"
-                      dataType="i4"
-                      errorOrTruncationOperation="Conversion"
-                      errorRowDisposition="FailComponent"
-                      externalMetadataColumnId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].ExternalColumns[TrackId]"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[TrackId]"
-                      name="TrackId"
-                      truncationRowDisposition="FailComponent" />
-                  </outputColumns>
-                  <externalMetadataColumns
-                    isUsed="True">
-                    <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].ExternalColumns[PlaylistId]"
-                      dataType="i4"
-                      name="PlaylistId" />
-                    <externalMetadataColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].ExternalColumns[TrackId]"
-                      dataType="i4"
-                      name="TrackId" />
-                  </externalMetadataColumns>
-                </output>
-                <output
-                  refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output]"
-                  isErrorOut="true"
-                  name="OLE DB Source Error Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[PlaylistId]"
-                      name="PlaylistId" />
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[TrackId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[TrackId]"
-                      name="TrackId" />
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[ErrorCode]"
-                      name="ErrorCode"
-                      specialFlags="1" />
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Error Output].Columns[ErrorColumn]"
-                      name="ErrorColumn"
-                      specialFlags="2" />
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Playlist in staging\Sort"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Playlist in staging\Sort.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Sort.Inputs[Sort Input].Columns[PlaylistId]"
-                      cachedDataType="i4"
-                      cachedName="PlaylistId"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[PlaylistId]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Sort.Inputs[Sort Input].Columns[TrackId]"
-                      cachedDataType="i4"
-                      cachedName="TrackId"
-                      lineageId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[TrackId]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Playlist in staging\Sort.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[PlaylistId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[PlaylistId]"
-                      name="PlaylistId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[PlaylistId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[TrackId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Sort.Outputs[Sort Output].Columns[TrackId]"
-                      name="TrackId">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output].Columns[TrackId]}</property>
-                      </properties>
-                    </outputColumn>
-                  </outputColumns>
-                  <externalMetadataColumns />
-                </output>
-              </outputs>
-            </component>
-            <component
-              refId="Package\Load Playlist in staging\Sort 1"
-              componentClassID="Microsoft.Sort"
-              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
-              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
-              name="Sort 1"
-              version="1">
-              <properties>
-                <property
-                  dataType="System.Boolean"
-                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
-                  name="EliminateDuplicates">false</property>
-                <property
-                  dataType="System.Int32"
-                  description="Specifies the maximum number of threads to use for sorting."
-                  expressionType="Notify"
-                  name="MaximumThreads">-1</property>
-              </properties>
-              <inputs>
-                <input
-                  refId="Package\Load Playlist in staging\Sort 1.Inputs[Sort Input]"
-                  name="Sort Input">
-                  <inputColumns>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Sort 1.Inputs[Sort Input].Columns[PlaylistId]"
-                      cachedDataType="i4"
-                      cachedName="PlaylistId"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">1</property>
-                      </properties>
-                    </inputColumn>
-                    <inputColumn
-                      refId="Package\Load Playlist in staging\Sort 1.Inputs[Sort Input].Columns[Name]"
-                      cachedDataType="wstr"
-                      cachedLength="120"
-                      cachedName="Name"
-                      lineageId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]">
-                      <properties>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the comparison options for character data."
-                          name="NewComparisonFlags">0</property>
-                        <property
-                          dataType="System.Int32"
-                          description="Specifies the sort order of the column."
-                          name="NewSortKeyPosition">0</property>
-                      </properties>
-                    </inputColumn>
-                  </inputColumns>
-                  <externalMetadataColumns />
-                </input>
-              </inputs>
-              <outputs>
-                <output
-                  refId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output]"
-                  isSorted="true"
-                  name="Sort Output">
-                  <outputColumns>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[PlaylistId]"
-                      dataType="i4"
-                      lineageId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[PlaylistId]"
-                      name="PlaylistId"
-                      sortKeyPosition="1">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[PlaylistId]}</property>
-                      </properties>
-                    </outputColumn>
-                    <outputColumn
-                      refId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[Name]"
-                      dataType="wstr"
-                      length="120"
-                      lineageId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output].Columns[Name]"
-                      name="Name">
-                      <properties>
-                        <property
-                          containsID="true"
-                          dataType="System.Int32"
-                          description="Specifies the lineage identifier of the input column that is associated with this output column."
-                          name="SortColumnId">#{Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output].Columns[Name]}</property>
-                      </properties>
-                    </outputColumn>
                   </outputColumns>
                   <externalMetadataColumns />
                 </output>
@@ -807,136 +879,20 @@
           </components>
           <paths>
             <path
-              refId="Package\Load Playlist in staging.Paths[Merge Join Output]"
-              endId="Package\Load Playlist in staging\OLE DB Destination.Inputs[OLE DB Destination Input]"
-              name="Merge Join Output"
-              startId="Package\Load Playlist in staging\Merge Join.Outputs[Merge Join Output]" />
+              refId="Package\Data Flow Task.Paths[Lookup No Match Output]"
+              endId="Package\Data Flow Task\Multicast.Inputs[Multicast Input 1]"
+              name="Lookup No Match Output"
+              startId="Package\Data Flow Task\Lookup.Outputs[Lookup No Match Output]" />
             <path
-              refId="Package\Load Playlist in staging.Paths[OLE DB Source Output]"
-              endId="Package\Load Playlist in staging\Sort 1.Inputs[Sort Input]"
+              refId="Package\Data Flow Task.Paths[OLE DB Source Output]"
+              endId="Package\Data Flow Task\Lookup.Inputs[Lookup Input]"
               name="OLE DB Source Output"
-              startId="Package\Load Playlist in staging\Playlist Source.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Playlist in staging.Paths[OLE DB Source Output1]"
-              endId="Package\Load Playlist in staging\Sort.Inputs[Sort Input]"
-              name="OLE DB Source Output"
-              startId="Package\Load Playlist in staging\PlaylistTrack Source.Outputs[OLE DB Source Output]" />
-            <path
-              refId="Package\Load Playlist in staging.Paths[Sort Output]"
-              endId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Right Input]"
-              name="Sort Output"
-              startId="Package\Load Playlist in staging\Sort 1.Outputs[Sort Output]" />
-            <path
-              refId="Package\Load Playlist in staging.Paths[Sort Output1]"
-              endId="Package\Load Playlist in staging\Merge Join.Inputs[Merge Join Left Input]"
-              name="Sort Output"
-              startId="Package\Load Playlist in staging\Sort.Outputs[Sort Output]" />
+              startId="Package\Data Flow Task\OLE DB Source.Outputs[OLE DB Source Output]" />
           </paths>
         </pipeline>
       </DTS:ObjectData>
     </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load Sales in staging"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{7B5FDCCE-23F5-4926-A853-112292DEE335}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Load Sales in staging"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="INSERT INTO [dbo].[Sales] (&#xA;[TrackId],[InvoiceId],[CustomerId],[EmployeeId],[InvoiceDate],[UnitPrice],[Quantity]&#xA;)&#xA;&#xA;SELECT il.[TrackId]      -- productID&#xA;      ,i.[InvoiceId]     -- the order (timologio)&#xA;      ,i.[CustomerId]    -- the customer that made the order&#xA;&#x9;  ,e.[EmployeeId]    --the employee who helped the customer for the order&#xA;      ,i.[InvoiceDate]   -- the date&#xA;      ,il.[UnitPrice]    -- track price&#xA;      ,il.[Quantity]     -- track quantity - always 1&#xA;&#xA;FROM [Chinook].[dbo].[Invoice] i&#xA;INNER JOIN [Chinook].[dbo].[InvoiceLine] il ON il.InvoiceId = i.InvoiceId&#xA;INNER JOIN [Chinook].[dbo].[Customer] c ON c.CustomerId = i.CustomerId&#xA;INNER JOIN [Chinook].[dbo].[Employee] e ON e.EmployeeId = c.SupportRepId &#xA;&#xA;WHERE CAST(i.[InvoiceDate] as date) &gt;= '2013-12-22';" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Load Track in staging"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{6563484D-5D9F-4A88-A132-2BFC2D3184F5}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Load Track in staging"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="&#xA;INSERT INTO [dbo].[Track](&#xA;[TrackId],[TrackName],[AlbumTitle],[ArtistName],[MediaTypeName],[GenreName],[Composer],[Milliseconds],[Bytes]&#xA;)&#xA;&#xA;SELECT t.TrackId,&#xA;&#x9;   t.[Name] &#xA;      ,a.[Title] &#xA;&#x9;  ,artist.[Name]  &#xA;      ,mt.[Name] &#xA;      ,g.[Name] &#xA;      ,t.[Composer]&#xA;      ,t.[Milliseconds]&#xA;      ,t.[Bytes]&#xA;--&#x9;  ,p.[Name] as PlayListName &#xA;&#xA;FROM [Chinook].[dbo].[Track] t&#xA;INNER JOIN Chinook.[dbo].[Album] a ON a.AlbumId = t.AlbumId &#xA;INNER JOIN Chinook.[dbo].[Artist] artist ON artist.ArtistId = a.ArtistId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[MediaType] mt ON mt.MediaTypeId=t.MediaTypeId&#xA;&#xA;INNER JOIN [Chinook].[dbo].[Genre] g ON g.GenreId = t.GenreId " xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
-    <DTS:Executable
-      DTS:refId="Package\Truncate tables in staging area"
-      DTS:CreationName="Microsoft.ExecuteSQLTask"
-      DTS:Description="Execute SQL Task"
-      DTS:DTSID="{01DD926F-5004-4195-84E1-20AF4EDA6215}"
-      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
-      DTS:LocaleID="-1"
-      DTS:ObjectName="Truncate tables in staging area"
-      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2022; © 2022 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
-      DTS:ThreadHint="0">
-      <DTS:Variables />
-      <DTS:ObjectData>
-        <SQLTask:SqlTaskData
-          SQLTask:Connection="{CCE30598-DC98-4192-9EA9-AF8B17C06013}"
-          SQLTask:SqlStatementSource="TRUNCATE TABLE [dbo].[Employee];&#xA;TRUNCATE TABLE [dbo].[Customer];&#xA;TRUNCATE TABLE [dbo].[Sales];&#xA;TRUNCATE TABLE [dbo].[Track];&#xA;TRUNCATE TABLE [dbo].[PlaylistName];&#xA;&#xA;&#xA;&#xA;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
-      </DTS:ObjectData>
-    </DTS:Executable>
   </DTS:Executables>
-  <DTS:PrecedenceConstraints>
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint]"
-      DTS:CreationName=""
-      DTS:DTSID="{7772F389-E1AD-4725-8499-926FD04339F5}"
-      DTS:From="Package\Truncate tables in staging area"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint"
-      DTS:To="Package\Load Employee in staging" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 1]"
-      DTS:CreationName=""
-      DTS:DTSID="{B2F39DBB-378D-4E21-9732-DB91E2A4EEDD}"
-      DTS:From="Package\Load Employee in staging"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 1"
-      DTS:To="Package\Load Customer in staging" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 2]"
-      DTS:CreationName=""
-      DTS:DTSID="{CB4EA39C-DAEC-41C1-93C3-67E9E7409E1B}"
-      DTS:From="Package\Load Customer in staging"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 2"
-      DTS:To="Package\Load Track in staging" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 3]"
-      DTS:CreationName=""
-      DTS:DTSID="{FB2DC1B1-C62B-4C6A-9EA8-41BAAD5E7096}"
-      DTS:From="Package\Load Track in staging"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 3"
-      DTS:To="Package\Load Sales in staging" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 4]"
-      DTS:CreationName=""
-      DTS:DTSID="{2164F4FC-F741-47A1-A68E-063990BEBC46}"
-      DTS:From="Package\Load Sales in staging"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 4"
-      DTS:To="Package\Load Playlist in staging" />
-    <DTS:PrecedenceConstraint
-      DTS:refId="Package.PrecedenceConstraints[Constraint 5]"
-      DTS:CreationName=""
-      DTS:DTSID="{F12A20D1-FDA7-409A-88D5-E1DC0CC9C139}"
-      DTS:From="Package\Load Playlist in staging"
-      DTS:LogicalAnd="True"
-      DTS:ObjectName="Constraint 5"
-      DTS:To="Package\Execute SQL Task" />
-  </DTS:PrecedenceConstraints>
   <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
 <!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
 <!--If you manually edit this section and make a mistake, you can delete it. -->
@@ -948,304 +904,41 @@
     design-time-name="Package">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
         <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Load Customer in staging"
-          TopLeft="229.201376365878,137.4533323775" />
-        <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Load Employee in staging"
-          TopLeft="229.201376365878,75.6599994738698" />
-        <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Load Playlist in staging"
-          TopLeft="229.201376365878,322.83333108839" />
-        <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Load Sales in staging"
-          TopLeft="229.201376365878,261.03999818476" />
-        <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Load Track in staging"
-          TopLeft="229.201376365878,199.24666528113" />
-        <NodeLayout
-          Size="220.8,41.6"
-          Id="Package\Truncate tables in staging area"
-          TopLeft="229.201376365878,13.8666665702396" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint]"
-          TopLeft="229.201376365878,34.6666665702396">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,56.1933329036302"
-              Start="0,0"
-              End="-7.5,56.1933329036302">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,52.1933329036302" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,52.1933329036302"
-                    Point2="-22.5,56.1933329036302"
-                    Point3="-18.5,56.1933329036302" />
-                  <mssgle:LineSegment
-                    End="-7.5,56.1933329036302" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 1]"
-          TopLeft="229.201376365878,102.05999947387">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.5933329036302"
-              Start="0,0"
-              End="-7.5,50.5933329036302">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,46.5933329036302" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.5933329036302"
-                    Point2="-22.5,50.5933329036302"
-                    Point3="-18.5,50.5933329036302" />
-                  <mssgle:LineSegment
-                    End="-7.5,50.5933329036302" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 2]"
-          TopLeft="229.201376365878,163.8533323775">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.59333290363"
-              Start="0,0"
-              End="-7.5,50.59333290363">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,46.59333290363" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.59333290363"
-                    Point2="-22.5,50.59333290363"
-                    Point3="-18.5,50.59333290363" />
-                  <mssgle:LineSegment
-                    End="-7.5,50.59333290363" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 3]"
-          TopLeft="229.201376365878,225.64666528113">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.59333290363"
-              Start="0,0"
-              End="-7.5,50.59333290363">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,46.59333290363" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.59333290363"
-                    Point2="-22.5,50.59333290363"
-                    Point3="-18.5,50.59333290363" />
-                  <mssgle:LineSegment
-                    End="-7.5,50.59333290363" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 4]"
-          TopLeft="229.201376365878,287.43999818476">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,50.59333290363"
-              Start="0,0"
-              End="-7.5,50.59333290363">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-18.5,0" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-18.5,0"
-                    Point2="-22.5,0"
-                    Point3="-22.5,4" />
-                  <mssgle:LineSegment
-                    End="-22.5,46.59333290363" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.59333290363"
-                    Point2="-22.5,50.59333290363"
-                    Point3="-18.5,50.59333290363" />
-                  <mssgle:LineSegment
-                    End="-7.5,50.59333290363" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <AnnotationLayout
-          Text="1. Load Staging area - new ETL cycle"
-          ParentId="Package"
-          FontInfo="{assembly:Null}"
-          Size="220,40"
-          Id="72f2cac2-1b83-4592-b041-2148a86abfe7"
-          TopLeft="458.333308291105,20.2222220815994" />
-        <NodeLayout
-          Size="164.8,41.6"
-          Id="Package\Execute SQL Task"
-          TopLeft="238.833320584563,400.699997251829" />
-        <EdgeLayout
-          Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="339.601376365878,364.43333108839">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-18.3680557813149,36.2666661634385"
-              Start="0,0"
-              End="-18.3680557813149,28.7666661634385">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,14.1333330817193" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,14.1333330817193"
-                    Point2="0,18.1333330817193"
-                    Point3="-4,18.1333330817193" />
-                  <mssgle:LineSegment
-                    End="-14.3680557813149,18.1333330817193" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-14.3680557813149,18.1333330817193"
-                    Point2="-18.3680557813149,18.1333330817193"
-                    Point3="-18.3680557813149,22.1333330817193" />
-                  <mssgle:LineSegment
-                    End="-18.3680557813149,28.7666661634385" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
+          Size="150.4,41.6"
+          Id="Package\Data Flow Task"
+          TopLeft="183.333323316442,41.5999997107188" />
       </GraphLayout>
     </LayoutInfo>
   </Package>
   <TaskHost
-    design-time-name="Package\Load Playlist in staging">
+    design-time-name="Package\Data Flow Task">
     <LayoutInfo>
       <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
         <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Load Playlist in staging\Sort"
-          TopLeft="311.999996244907,60.9999999850988" />
+          Size="152,41.6"
+          Id="Package\Data Flow Task\OLE DB Source"
+          TopLeft="390.833311979142,58.9333329235183" />
         <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Load Playlist in staging\Sort 1"
-          TopLeft="620.999991640449,71.9999998211861" />
-        <NodeLayout
-          Size="173.6,41.6"
-          Id="Package\Load Playlist in staging\PlaylistTrack Source"
-          TopLeft="60,60" />
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Load Playlist in staging\Playlist Source"
-          TopLeft="794.999989047646,66.9999998956919" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Load Playlist in staging\Merge Join"
-          TopLeft="459.999994039535,165.999998420477" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Load Playlist in staging\OLE DB Destination"
-          TopLeft="443.999994277954,284.999996647239" />
+          Size="112.8,41.6"
+          Id="Package\Data Flow Task\Lookup"
+          TopLeft="408.833311296173,177.099998806715" />
         <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Sort Output1]"
-          TopLeft="360.799996244907,102.599999985099">
+          Id="Package\Data Flow Task.Paths[OLE DB Source Output]"
+          TopLeft="466.033311637657,100.533332923518">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="143.733331127961,63.3999984353781"
+              EndConnector="0,76.5666658831967"
               Start="0,0"
-              End="143.733331127961,55.8999984353781">
+              End="0,69.0666658831967">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,33.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5760966336509"
-                    Point2="0,37.5760966336509"
-                    Point3="4,37.5760966336509" />
-                  <mssgle:LineSegment
-                    End="139.733331127961,37.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="139.733331127961,37.5760966336509"
-                    Point2="143.733331127961,37.5760966336509"
-                    Point3="143.733331127961,41.5760966336509" />
-                  <mssgle:LineSegment
-                    End="143.733331127961,55.8999984353781" />
+                    End="0,69.0666658831967" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1254,108 +947,72 @@
             <EdgeLabelCollection />
           </EdgeLayout.Labels>
         </EdgeLayout>
+        <NodeLayout
+          Size="119.2,41.6"
+          Id="Package\Data Flow Task\Multicast"
+          TopLeft="403.333311296172,303.333331223991" />
         <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Sort Output]"
-          TopLeft="674.199991640449,113.599999821186">
+          Id="Package\Data Flow Task.Paths[Lookup No Match Output]"
+          TopLeft="464.083311296173,218.699998806715">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-129.133330934246,52.3999985992908"
+              EndConnector="0,84.6333324172763"
               Start="0,0"
-              End="-129.133330934246,44.8999985992908">
+              End="0,77.1333324172763">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,27.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.0565845356772"
-                    Point2="0,31.0565845356772"
-                    Point3="-4,31.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-125.133330934246,31.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-125.133330934246,31.0565845356772"
-                    Point2="-129.133330934246,31.0565845356772"
-                    Point3="-129.133330934246,35.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-129.133330934246,44.8999985992908" />
+                    End="0,77.1333324172763" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
           </EdgeLayout.Curve>
           <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output1]"
-          TopLeft="233.6,81.2999999925494">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.3999962449075,0"
-              Start="0,0"
-              End="70.8999962449075,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="70.8999962449075,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output]"
-          TopLeft="794.999989047646,90.299999858439">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-67.5999974071971,0"
-              Start="0,0"
-              End="-60.0999974071971,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-60.0999974071971,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Merge Join Output]"
-          TopLeft="527.199994158745,207.599998420477">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,77.3999982267619"
-              Start="0,0"
-              End="0,69.8999982267619">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.8999982267619" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <EdgeLabelCollection />
+            <mssgm:EdgeLabel
+              BoundingBox="-64.6750390625,30.5666662086381,129.350078125,16"
+              RelativePosition="Any" />
           </EdgeLayout.Labels>
         </EdgeLayout>
       </GraphLayout>
     </LayoutInfo>
   </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\OLE DB Source">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+  <PipelineComponentMetadata
+    design-time-name="Package\Data Flow Task\Lookup">
+    <Properties>
+      <Property>
+        <Name>OverwriteParamsSQLProp</Name>
+        <Value
+          type="q2:boolean">false</Value>
+      </Property>
+      <Property>
+        <Name>UsedTableName</Name>
+        <Value
+          type="q3:string"></Value>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q4:int">0</Value>
+      </Property>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>

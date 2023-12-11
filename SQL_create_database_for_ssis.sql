@@ -16,7 +16,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 ------------------------------------------------------------------------------
-CREATE TABLE [dbo].[Customers](
+CREATE TABLE [dbo].[Customer](
 	[CustomerId] [int] NULL,
 	[FirstName] [nvarchar](40) NULL,
 	[LastName] [nvarchar](20) NULL,
@@ -33,7 +33,7 @@ CREATE TABLE [dbo].[Customers](
 ) ON [PRIMARY]
 GO
 
-CREATE TABLE [dbo].[Employees](
+CREATE TABLE [dbo].[Employee](
 	[EmployeeId] [int] NULL,
 	[LastName] [nvarchar](20) NULL,
 	[FirstName] [nvarchar](20) NULL,
@@ -53,7 +53,7 @@ CREATE TABLE [dbo].[Employees](
 GO
 
 
-CREATE TABLE [dbo].[Tracks](
+CREATE TABLE [dbo].[Track](
 	[TrackId] [int] NULL,
 	[TrackName] [nvarchar](200) NULL,
 	[MediaTypeName] [nvarchar](120) NULL,

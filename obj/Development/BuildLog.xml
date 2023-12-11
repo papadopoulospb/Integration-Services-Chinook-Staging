@@ -2,13 +2,13 @@
 <BuildLog xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <ProjectInfo>
     <Name>Integration Services Chinook Staging</Name>
-    <LastWriteTime>2023-12-10T21:26:33.2842973Z</LastWriteTime>
+    <LastWriteTime>2023-12-11T21:33:03.4699876Z</LastWriteTime>
     <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
   </ProjectInfo>
   <LastBuildInfos>
     <ProjectBuildItemInfo>
       <Name>Load_staging_ssis.dtsx</Name>
-      <LastWriteTime>2023-12-09T17:54:24.1450395Z</LastWriteTime>
+      <LastWriteTime>2023-12-11T20:34:52.6506576Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
@@ -38,7 +38,12 @@
     </ProjectBuildItemInfo>
     <ProjectBuildItemInfo>
       <Name>SCD_type2_ssis.dtsx</Name>
-      <LastWriteTime>2023-12-10T21:25:36.5301471Z</LastWriteTime>
+      <LastWriteTime>2023-12-10T21:39:40.1138699Z</LastWriteTime>
+      <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
+    </ProjectBuildItemInfo>
+    <ProjectBuildItemInfo>
+      <Name>Package1.dtsx</Name>
+      <LastWriteTime>2023-12-11T21:47:14.185447Z</LastWriteTime>
       <LastKnownProtectionLevel>EncryptSensitiveWithUserKey</LastKnownProtectionLevel>
     </ProjectBuildItemInfo>
   </LastBuildInfos>
