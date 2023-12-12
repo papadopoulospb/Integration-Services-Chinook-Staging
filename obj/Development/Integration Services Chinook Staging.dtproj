@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">LAPTOP-S3TKI4O0</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAACAAAAAAAQZgAAAAEAACAAAAD95WRgY5meIbyVxfg+C32aaD5rZReTjjZhvXyFWkt6zgAAAAAOgAAAAAIAACAAAACggnu8cm1Dm0cSz75sKrgXQ9tHVF2gbhFMlDE0gGoJSZAAAAC5UTRY+MEw/RoFNLDCsdTE7c4P5Wn75OJvuKkBVnSZNNN03gktzq4SQp8Tw2y9Zj2yBCY+ykCHgwA01jKsjZG2QMyszNyC0ccB1zkErPDuKcADB4oGrmarMnfuznytlNKjC50bQi/QBa6Gg0rl7rNT96su3Vwczdzm+iHZDLmJYnzO6LxaBa4bwGCaaTpQlSNAAAAA06z2/BVIX9aGR/z8JlPEddDKsY/1MhLu8MK/V6sUfEL01gfL6yF6oV2ySjOSNYCZaqIfCfPVDyCUReb6FUziiA==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAACAAAAAAAQZgAAAAEAACAAAABm5gTurZC5WQ0uuD1XABmgSmwqCs/dVeUHRtifKGbLDAAAAAAOgAAAAAIAACAAAAB5k7s38+a4Nj9eOKV457KDyREwbAhq6wpZpvlUYGqFDpAAAACxKT9u9i8sDlc2Y/xQzzRvZupFe8GBWVYLT6/+UlusHSPnXG9eBEbWFBJqDkVVZaB5J/IC9EzJbu2hYlx5ZRwaBiC4K2Cmm4zqevTZYj39llRMirhtterDXgtLGvStbq37vj7QdNYwTP5iWxnHXpXhqR9ZYpfIzb2QEVE/6TH4edxbmbFz1PaNcGc+mCGl0vNAAAAAFfJSwO0zYzkq1+RF4hKD3HmCHCe+70/WtzXJczBhO9iYh5Go1250+kM8YDw1EB2lCEB0XzVOA2qxFAgn+Ysz3g==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -37,7 +37,7 @@
           <SSIS:Package SSIS:Name="Remove_relationship_DW_ssis.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="Make_changes_in OLTP.dtsx" SSIS:EntryPoint="1" />
           <SSIS:Package SSIS:Name="SCD_type2_ssis.dtsx" SSIS:EntryPoint="1" />
-          <SSIS:Package SSIS:Name="Package1.dtsx" SSIS:EntryPoint="1" />
+          <SSIS:Package SSIS:Name="script_run_allTogether.dtsx" SSIS:EntryPoint="1" />
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="LAPTOP-S3TKI4O0.Chinook.sa.conmgr" />
@@ -753,10 +753,10 @@
                 <SSIS:Property SSIS:Name="Name">SCD_type2_ssis</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">30</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">32</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{3F0B0093-6287-4598-B7E2-57D59B61C9EB}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{D144EE7B-2977-4427-895F-B1B745220A94}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
@@ -1063,16 +1063,16 @@
                 </SSIS:Parameter>
               </SSIS:Parameters>
             </SSIS:PackageMetaData>
-            <SSIS:PackageMetaData SSIS:Name="Package1.dtsx">
+            <SSIS:PackageMetaData SSIS:Name="script_run_allTogether.dtsx">
               <SSIS:Properties>
-                <SSIS:Property SSIS:Name="ID">{FB363406-1013-4B24-B536-E1EB5564FF1C}</SSIS:Property>
-                <SSIS:Property SSIS:Name="Name">Package1</SSIS:Property>
+                <SSIS:Property SSIS:Name="ID">{CD24F9D2-EBB2-48DF-BC71-E46AC00D68F6}</SSIS:Property>
+                <SSIS:Property SSIS:Name="Name">script_run_allTogether</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">9</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">13</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{EDE62BE4-F2E4-4FA7-817B-F66ADDB68205}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{5E725658-F495-4A4F-AD32-DAED964B8861}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>

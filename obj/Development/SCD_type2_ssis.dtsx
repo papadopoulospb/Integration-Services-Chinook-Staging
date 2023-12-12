@@ -11,8 +11,8 @@
   DTS:LocaleID="1032"
   DTS:ObjectName="SCD_type2_ssis"
   DTS:PackageType="5"
-  DTS:VersionBuild="31"
-  DTS:VersionGUID="{B42056E7-E72A-44FC-AC5F-E5086306B8FF}">
+  DTS:VersionBuild="32"
+  DTS:VersionGUID="{D144EE7B-2977-4427-895F-B1B745220A94}">
   <DTS:Property
     DTS:Name="PackageFormatVersion">8</DTS:Property>
   <DTS:ConnectionManagers>
@@ -29,7 +29,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACeWgr5pV0u2UF6xmtfV4FN0i1Uk8eiXHQJvTwX2YayAQAAAAAOgAAAAAIAACAAAABlnk/QmIyCF71QkQhQCtw3WQRna78dkATcCvA3ni0egiAAAAAJhTzzAKWS0o7QcoR7qOpfXdPk/62VDSIwrROBcQbb8UAAAABLKeU5R0EdfflTU1a2pQoG5CnAmyH4mPa2t7XBQDlClCkWNzJXkPjngx5zxKcGHTTQAJfTCUK/pxJNX7pDfMEA</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAACBhGZR01TxI/ui4AzBeiaeNLylWiIOfVpfvR1ch6qxigAAAAAOgAAAAAIAACAAAAC2WMn+dyQxE5qMWR8JDTnWzt9VjMa7iJumFVMqWCvYsSAAAAD8byidlXBd5FDkBZAFUqWbgl/9CFW6udx/4mWnZfQ+hkAAAAAfL4HBqid5qKhzHuoqFp8aQqu9CL1YnBJL6xM7h2xfiuX3upQ+fGM7KMPQV63PK153y0e7S2L/KR125ktpyzML</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -46,7 +46,7 @@
           <DTS:Password
             DTS:Name="Password"
             Sensitive="1"
-            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAAARIm3wNxVzDHOk8rgi0ebrSH6gWI1AzTqmm0uvGkuirQAAAAAOgAAAAAIAACAAAACsyTcxG6vXCmTH6Xs8SrWakuWfifF6LuoT4JqmEdg5lSAAAACwwijIJGtjrfEtumZjaPQB3GgUOMy/IPUQr2ru2bLi9kAAAADboK8J6SUXcEG1a2/oooeaknW5bbUJihEOR1HPE1QMRdlHBuMBz6soy5HHiKyPcb7qIO5TGFqLh8y6+TjAfAWz</DTS:Password>
+            Encrypted="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAdlSO0ln0iE+pZCBLXIdXSwAAAAAIAAAARABUAFMAAAAQZgAAAAEAACAAAABY7S+BFYZ2/y6/2xmU3iRglyq/DGvzT8O4osB78Z/gkgAAAAAOgAAAAAIAACAAAACU5r8wvJYS6PqsRjwKgtRqBYDVxWyBF/3wJKVZB0UFbiAAAAC1BO96ekLyeRBhOMSsBCkbfbKjoI9kPpJIvPFBXzH6sEAAAABpEmaNGOFy+ZzquXGk1WPcRx/8VMz+1EkARpH3oYGaYBAtJXGvnN5YeFMuxIL+k0KKxYMa034hdblPlkzQb32j</DTS:Password>
         </DTS:ConnectionManager>
       </DTS:ObjectData>
     </DTS:ConnectionManager>
@@ -1430,10 +1430,6 @@ where [refTable].[TrackId] = ?</property>
       <GraphLayout
         Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
         <NodeLayout
-          Size="150.4,41.6"
-          Id="Package\Load the playlist"
-          TopLeft="234.166653872365,479.266663333906" />
-        <NodeLayout
           Size="164.8,41.6"
           Id="Package\Change the DW"
           TopLeft="238.833320584563,400.699997251829" />
@@ -1448,11 +1444,15 @@ where [refTable].[TrackId] = ?</property>
         <NodeLayout
           Size="220.8,41.6"
           Id="Package\Load Playlist in staging"
-          TopLeft="229.201376365878,322.83333108839" />
+          TopLeft="230.868042941482,322.83333108839" />
         <NodeLayout
           Size="220.8,41.6"
           Id="Package\Load Sales in staging"
           TopLeft="229.201376365878,261.03999818476" />
+        <NodeLayout
+          Size="150.4,41.6"
+          Id="Package\Load the playlist"
+          TopLeft="234.166653872365,479.266663333906" />
         <NodeLayout
           Size="220.8,41.6"
           Id="Package\Load Track in staging"
@@ -1603,9 +1603,9 @@ where [refTable].[TrackId] = ?</property>
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="0,50.59333290363"
+              EndConnector="1.66666657560404,56.1933329036301"
               Start="0,0"
-              End="-7.5,50.59333290363">
+              End="-5.83333342439596,56.1933329036301">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
@@ -1616,13 +1616,13 @@ where [refTable].[TrackId] = ?</property>
                     Point2="-22.5,0"
                     Point3="-22.5,4" />
                   <mssgle:LineSegment
-                    End="-22.5,46.59333290363" />
+                    End="-22.5,52.1933329036301" />
                   <mssgle:CubicBezierSegment
-                    Point1="-22.5,46.59333290363"
-                    Point2="-22.5,50.59333290363"
-                    Point3="-18.5,50.59333290363" />
+                    Point1="-22.5,52.1933329036301"
+                    Point2="-22.5,56.1933329036301"
+                    Point3="-18.5,56.1933329036301" />
                   <mssgle:LineSegment
-                    End="-7.5,50.59333290363" />
+                    End="-5.83333342439596,56.1933329036301" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1633,30 +1633,30 @@ where [refTable].[TrackId] = ?</property>
         </EdgeLayout>
         <EdgeLayout
           Id="Package.PrecedenceConstraints[Constraint 5]"
-          TopLeft="339.601376365878,364.43333108839">
+          TopLeft="341.268042941482,364.43333108839">
           <EdgeLayout.Curve>
             <mssgle:Curve
               StartConnector="{assembly:Null}"
-              EndConnector="-18.3680557813149,36.2666661634385"
+              EndConnector="-20.034722356919,36.266666163439"
               Start="0,0"
-              End="-18.3680557813149,28.7666661634385">
+              End="-20.034722356919,28.766666163439">
               <mssgle:Curve.Segments>
                 <mssgle:SegmentCollection
                   Capacity="5">
                   <mssgle:LineSegment
-                    End="0,14.1333330817193" />
+                    End="0,14.1333330817195" />
                   <mssgle:CubicBezierSegment
-                    Point1="0,14.1333330817193"
-                    Point2="0,18.1333330817193"
-                    Point3="-4,18.1333330817193" />
+                    Point1="0,14.1333330817195"
+                    Point2="0,18.1333330817195"
+                    Point3="-4,18.1333330817195" />
                   <mssgle:LineSegment
-                    End="-14.3680557813149,18.1333330817193" />
+                    End="-16.034722356919,18.1333330817195" />
                   <mssgle:CubicBezierSegment
-                    Point1="-14.3680557813149,18.1333330817193"
-                    Point2="-18.3680557813149,18.1333330817193"
-                    Point3="-18.3680557813149,22.1333330817193" />
+                    Point1="-16.034722356919,18.1333330817195"
+                    Point2="-20.034722356919,18.1333330817195"
+                    Point3="-20.034722356919,22.1333330817195" />
                   <mssgle:LineSegment
-                    End="-18.3680557813149,28.7666661634385" />
+                    End="-20.034722356919,28.766666163439" />
                 </mssgle:SegmentCollection>
               </mssgle:Curve.Segments>
             </mssgle:Curve>
@@ -1702,6 +1702,172 @@ where [refTable].[TrackId] = ?</property>
       </GraphLayout>
     </LayoutInfo>
   </Package>
+  <TaskHost
+    design-time-name="Package\Load Playlist in staging">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="97.6,41.6"
+          Id="Package\Load Playlist in staging\Sort"
+          TopLeft="311.999996244907,60.9999999850988" />
+        <NodeLayout
+          Size="106.4,41.6"
+          Id="Package\Load Playlist in staging\Sort 1"
+          TopLeft="620.999991640449,71.9999998211861" />
+        <NodeLayout
+          Size="173.6,41.6"
+          Id="Package\Load Playlist in staging\PlaylistTrack Source"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="147.2,41.6"
+          Id="Package\Load Playlist in staging\Playlist Source"
+          TopLeft="794.999989047646,66.9999998956919" />
+        <NodeLayout
+          Size="129.6,41.6"
+          Id="Package\Load Playlist in staging\Merge Join"
+          TopLeft="459.999994039535,165.999998420477" />
+        <NodeLayout
+          Size="171.2,41.6"
+          Id="Package\Load Playlist in staging\OLE DB Destination"
+          TopLeft="443.999994277954,284.999996647239" />
+        <EdgeLayout
+          Id="Package\Load Playlist in staging.Paths[Sort Output1]"
+          TopLeft="360.799996244907,102.599999985099">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="143.733331127961,63.3999984353781"
+              Start="0,0"
+              End="143.733331127961,55.8999984353781">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,33.5760966336509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,33.5760966336509"
+                    Point2="0,37.5760966336509"
+                    Point3="4,37.5760966336509" />
+                  <mssgle:LineSegment
+                    End="139.733331127961,37.5760966336509" />
+                  <mssgle:CubicBezierSegment
+                    Point1="139.733331127961,37.5760966336509"
+                    Point2="143.733331127961,37.5760966336509"
+                    Point3="143.733331127961,41.5760966336509" />
+                  <mssgle:LineSegment
+                    End="143.733331127961,55.8999984353781" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Playlist in staging.Paths[Sort Output]"
+          TopLeft="674.199991640449,113.599999821186">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-129.133330934246,52.3999985992908"
+              Start="0,0"
+              End="-129.133330934246,44.8999985992908">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,27.0565845356772" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,27.0565845356772"
+                    Point2="0,31.0565845356772"
+                    Point3="-4,31.0565845356772" />
+                  <mssgle:LineSegment
+                    End="-125.133330934246,31.0565845356772" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-125.133330934246,31.0565845356772"
+                    Point2="-129.133330934246,31.0565845356772"
+                    Point3="-129.133330934246,35.0565845356772" />
+                  <mssgle:LineSegment
+                    End="-129.133330934246,44.8999985992908" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output1]"
+          TopLeft="233.6,81.2999999925494">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="78.3999962449075,0"
+              Start="0,0"
+              End="70.8999962449075,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="70.8999962449075,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output]"
+          TopLeft="794.999989047646,90.299999858439">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-67.5999974071971,0"
+              Start="0,0"
+              End="-60.0999974071971,0">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="-60.0999974071971,0" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\Load Playlist in staging.Paths[Merge Join Output]"
+          TopLeft="527.199994158745,207.599998420477">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,77.3999982267619"
+              Start="0,0"
+              End="0,69.8999982267619">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,69.8999982267619" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
   <TaskHost
     design-time-name="Package\Load the playlist">
     <LayoutInfo>
@@ -1841,181 +2007,5 @@ where [refTable].[TrackId] = ?</property>
       </Property>
     </Properties>
   </PipelineComponentMetadata>
-  <TaskHost
-    design-time-name="Package\Load Playlist in staging">
-    <LayoutInfo>
-      <GraphLayout
-        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:mssgm="clr-namespace:Microsoft.SqlServer.Graph.Model;assembly=Microsoft.SqlServer.Graph">
-        <NodeLayout
-          Size="97.6,41.6"
-          Id="Package\Load Playlist in staging\Sort"
-          TopLeft="311.999996244907,60.9999999850988" />
-        <NodeLayout
-          Size="106.4,41.6"
-          Id="Package\Load Playlist in staging\Sort 1"
-          TopLeft="620.999991640449,71.9999998211861" />
-        <NodeLayout
-          Size="173.6,41.6"
-          Id="Package\Load Playlist in staging\PlaylistTrack Source"
-          TopLeft="60,60" />
-        <NodeLayout
-          Size="147.2,41.6"
-          Id="Package\Load Playlist in staging\Playlist Source"
-          TopLeft="794.999989047646,66.9999998956919" />
-        <NodeLayout
-          Size="129.6,41.6"
-          Id="Package\Load Playlist in staging\Merge Join"
-          TopLeft="459.999994039535,165.999998420477" />
-        <NodeLayout
-          Size="171.2,41.6"
-          Id="Package\Load Playlist in staging\OLE DB Destination"
-          TopLeft="443.999994277954,284.999996647239" />
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Sort Output1]"
-          TopLeft="360.799996244907,102.599999985099">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="143.733331127961,63.3999984353781"
-              Start="0,0"
-              End="143.733331127961,55.8999984353781">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,33.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,33.5760966336509"
-                    Point2="0,37.5760966336509"
-                    Point3="4,37.5760966336509" />
-                  <mssgle:LineSegment
-                    End="139.733331127961,37.5760966336509" />
-                  <mssgle:CubicBezierSegment
-                    Point1="139.733331127961,37.5760966336509"
-                    Point2="143.733331127961,37.5760966336509"
-                    Point3="143.733331127961,41.5760966336509" />
-                  <mssgle:LineSegment
-                    End="143.733331127961,55.8999984353781" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Sort Output]"
-          TopLeft="674.199991640449,113.599999821186">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-129.133330934246,52.3999985992908"
-              Start="0,0"
-              End="-129.133330934246,44.8999985992908">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,27.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="0,27.0565845356772"
-                    Point2="0,31.0565845356772"
-                    Point3="-4,31.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-125.133330934246,31.0565845356772" />
-                  <mssgle:CubicBezierSegment
-                    Point1="-125.133330934246,31.0565845356772"
-                    Point2="-129.133330934246,31.0565845356772"
-                    Point3="-129.133330934246,35.0565845356772" />
-                  <mssgle:LineSegment
-                    End="-129.133330934246,44.8999985992908" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output1]"
-          TopLeft="233.6,81.2999999925494">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="78.3999962449075,0"
-              Start="0,0"
-              End="70.8999962449075,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="70.8999962449075,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[OLE DB Source Output]"
-          TopLeft="794.999989047646,90.299999858439">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="-67.5999974071971,0"
-              Start="0,0"
-              End="-60.0999974071971,0">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="-60.0999974071971,0" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-        <EdgeLayout
-          Id="Package\Load Playlist in staging.Paths[Merge Join Output]"
-          TopLeft="527.199994158745,207.599998420477">
-          <EdgeLayout.Curve>
-            <mssgle:Curve
-              StartConnector="{assembly:Null}"
-              EndConnector="0,77.3999982267619"
-              Start="0,0"
-              End="0,69.8999982267619">
-              <mssgle:Curve.Segments>
-                <mssgle:SegmentCollection
-                  Capacity="5">
-                  <mssgle:LineSegment
-                    End="0,69.8999982267619" />
-                </mssgle:SegmentCollection>
-              </mssgle:Curve.Segments>
-            </mssgle:Curve>
-          </EdgeLayout.Curve>
-          <EdgeLayout.Labels>
-            <mssgm:EdgeLabel
-              BoundingBox="0,0,0,0"
-              RelativePosition="Any" />
-          </EdgeLayout.Labels>
-        </EdgeLayout>
-      </GraphLayout>
-    </LayoutInfo>
-  </TaskHost>
 </Objects>]]></DTS:DesignTimeProperties>
 </DTS:Executable>
