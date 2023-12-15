@@ -22,7 +22,7 @@ The order of the execution is:
 7. SCD_type2_ssis
 8. Make_relationshipDW_ssis
 
-It is very crusial to note that **before executing** SCD_type2_ssis, you must "cut" the relationship between the dimension tables and the fact table.
+It is very crusial to note that **before executing** SCD_type2_ssis, you must "cut" the relationship between the dimension tables and the fact table. Also every time you are trying to drop the tables in DW you have to "cut" the connections between the dimension tables and the fact table.
 
 > [!IMPORTANT]
 > It is essential to configure the **Connection Managers** and the **OLE DB** connections according to your own pc and sql server. Otherwise errors will occur.
